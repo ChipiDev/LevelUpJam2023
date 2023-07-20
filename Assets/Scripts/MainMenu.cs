@@ -24,11 +24,9 @@ public class MainMenu : MonoBehaviour
         gameTittle.SetActive(true);
         laguagesButtons.SetActive(true);
 
-#if UNITY_WEBGL
-       // En WebGL no nos hace falta este bot�n
-       exitButton.SetActive(false);
-#endif
-
+        #if UNITY_WEBGL
+               exitButton.SetActive(false);
+        #endif
     }
 
     public void OnStartGameButtonClicked()
@@ -78,6 +76,9 @@ public class MainMenu : MonoBehaviour
 
     public void OnExitButtonClicked()
     {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         Application.Quit();
     }
 }
