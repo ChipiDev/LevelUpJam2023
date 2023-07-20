@@ -11,7 +11,6 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsMenu;
     public GameObject gameTittle;
     public GameObject laguagesButtons;
-
     public GameObject levelSelectionMenu;
 
     // Start is called before the first frame update
