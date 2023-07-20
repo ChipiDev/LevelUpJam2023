@@ -944,7 +944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -170.1, y: 29.4}
+  m_AnchoredPosition: {x: -170.10004, y: 29.399994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &173306331
@@ -6220,7 +6220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -90.1, y: 114.9}
+  m_AnchoredPosition: {x: -90.099976, y: 114.899994}
   m_SizeDelta: {x: 133.06006, y: 34.950012}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1303861162
@@ -7852,7 +7852,9 @@ MonoBehaviour:
   controlsMenu: {fileID: 408008410}
   creditsMenu: {fileID: 682562225}
   gameTittle: {fileID: 953244106}
-  laguagesButtons: {fileID: 0}
+  spainButton: {fileID: 173306329}
+  englishButton: {fileID: 960898217}
+  laguagesText: {fileID: 1303861160}
   levelSelectionMenu: {fileID: 432787614}
 --- !u!114 &1630924471
 MonoBehaviour:
