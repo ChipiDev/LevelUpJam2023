@@ -86,7 +86,7 @@ public class TaskList : MonoBehaviour
 
         UpdateList();
 
-        #region Código antiguo que analiza toda la basura
+        #region Cï¿½digo antiguo que analiza toda la basura
         //* Analizamos la escena y creamos a lista de objetos a recoger
         //Trash[] trash = FindObjectsOfType<Trash>();
         //for (int i = 0; i < trash.Length; i++)
@@ -174,6 +174,7 @@ public class TaskList : MonoBehaviour
         if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash)
         {
             Debug.Log("Hemos ganao");
+            PlayerPrefs.SetInt("Nivel", PlayerPrefs.GetInt("Nivel") + 1);
         }
     }
 }
