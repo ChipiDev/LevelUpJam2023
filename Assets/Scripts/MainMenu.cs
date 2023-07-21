@@ -26,6 +26,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject level3;
     [SerializeField] private GameObject level4;
 
+    //Boton en el inspector para reiniciar el juego sin niveles desbloqueados
+    [SerializeField] private bool restartGame;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +68,8 @@ public class MainMenu : MonoBehaviour
         }else if(PlayerPrefs.GetInt("Nivel") == 3){
             level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
         }
+
+        Debug.Log(PlayerPrefs.GetInt("Nivel"));
     }
 
     public void OnStartGameButtonClicked()
@@ -128,8 +132,10 @@ public class MainMenu : MonoBehaviour
 
     public async void OnLevelButtonClicked(int levelIndex)
     {
-        await PanelFadeOut(3000);
-        SceneManager.LoadScene(levelIndex);
+        if(PlayerPrefs.GetInt("Nivel") >= levelIndex){
+            await PanelFadeOut(3000);
+            SceneManager.LoadScene(levelIndex);
+        }
     }
 
     public async void OnExitButtonClicked()
@@ -154,5 +160,12 @@ public class MainMenu : MonoBehaviour
         fadePanel.gameObject.SetActive(true);
         fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
         await Task.Delay(delay);
+    }
+
+    private void Update() {
+        if(restartGame){
+            PlayerPrefs.SetInt("Nivel", 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
