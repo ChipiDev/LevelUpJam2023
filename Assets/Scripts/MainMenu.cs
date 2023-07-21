@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsBackground;
     public GameObject chaptersBackground;
     public GameObject tutorialbackground;
+    [SerializeField] private GameObject level2;
+    [SerializeField] private GameObject level3;
+    [SerializeField] private GameObject level4;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +43,31 @@ public class MainMenu : MonoBehaviour
         #if UNITY_WEBGL
                exitButton.SetActive(false);
         #endif
+
+        if(PlayerPrefs.GetInt("FirstTime") == 1){
+            #if !UNITY_EDITOR
+                PlayerPrefs.SetInt("Nivel", 1);
+                PlayerPrefs.SetInt("FirstTime", -1);
+            #endif
+        }
+
+        Debug.Log(PlayerPrefs.GetInt("Nivel"));
+
+        level2.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        level3.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        level4.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+
+        if(PlayerPrefs.GetInt("Nivel") == 1){
+            level2.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+            level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+            level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+        }else if(PlayerPrefs.GetInt("Nivel") == 2){
+            level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+            level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+
+        }else if(PlayerPrefs.GetInt("Nivel") == 3){
+            level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
+        }
     }
 
     public void OnStartGameButtonClicked()

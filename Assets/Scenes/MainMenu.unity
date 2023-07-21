@@ -7662,6 +7662,9 @@ MonoBehaviour:
   creditsBackground: {fileID: 6739968}
   chaptersBackground: {fileID: 529898276}
   tutorialbackground: {fileID: 137488522}
+  level2: {fileID: 1168878688}
+  level3: {fileID: 1011207388}
+  level4: {fileID: 1618477170}
 --- !u!114 &1630924471
 MonoBehaviour:
   m_ObjectHideFlags: 0
