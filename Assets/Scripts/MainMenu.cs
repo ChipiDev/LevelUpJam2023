@@ -19,6 +19,8 @@ public class MainMenu : MonoBehaviour
     public GameObject levelSelectionMenu;
     public GameObject mainBackground;
     public GameObject creditsBackground;
+    public GameObject chaptersBackground;
+    public GameObject tutorialbackground;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +43,7 @@ public class MainMenu : MonoBehaviour
     public void OnStartGameButtonClicked()
     {
         mainBackground.SetActive(false);
-        //selectLevelBackground.setactive(true);
+        chaptersBackground.SetActive(true);
         levelSelectionMenu.SetActive(true);
         gameTittle.SetActive(false);
         spainButton.SetActive(false);
@@ -55,7 +57,7 @@ public class MainMenu : MonoBehaviour
     public void OnControlsButtonClicked()
     {
         mainBackground.SetActive(false);
-        //tutorialbackground.setactive(true);
+        tutorialbackground.SetActive(true);
         spainButton.SetActive(false);
         englishButton.SetActive(false);
         laguagesText.SetActive(false);
@@ -84,8 +86,8 @@ public class MainMenu : MonoBehaviour
     {
         mainBackground.SetActive(true);
         creditsBackground.SetActive(false);
-        //tutorialbackground.setactive(false);
-        //selectLevelBackground.setactive(false);
+        tutorialbackground.SetActive(false);
+        chaptersBackground.SetActive(false);
         spainButton.SetActive(true);
         englishButton.SetActive(true);
         laguagesText.SetActive(true);
