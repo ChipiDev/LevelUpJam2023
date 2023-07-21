@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour
 {
+    public string name;
+
     public enum ETrashType
     {
         amarillo,
@@ -19,8 +21,6 @@ public class Trash : MonoBehaviour
     public Collider2D collider2Dcollider;
     Vector3 restorePosition;
 
-    int standardOverlayIndex = 5;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +28,8 @@ public class Trash : MonoBehaviour
         overlay.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
         overlay.transform.localScale = Vector3.one * 1.23f;
         overlay.SetActive(false);
+
+        collider2Dcollider = GetComponent<Collider2D>();
     }
 
     private void Update()

@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Caja de pizza
   type: 2
   overlay: {fileID: 8226788679593979869}
   collider2Dcollider: {fileID: 0}

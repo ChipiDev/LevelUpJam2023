@@ -7,11 +7,6 @@ public class Container : MonoBehaviour
 {
     public ETrashType type;
     private bool isMouseInside = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -47,6 +42,7 @@ public class Container : MonoBehaviour
 
     private void PickUpTrash(Trash trash)
     {
+        TaskList.Instance.PickUpTrash(trash);
         Destroy(trash.gameObject);
     }
 }

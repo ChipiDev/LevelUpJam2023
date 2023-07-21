@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Lata de refresco
   type: 0
   overlay: {fileID: 6698117209500466987}
   collider2Dcollider: {fileID: 0}
