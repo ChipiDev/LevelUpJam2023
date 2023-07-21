@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace ChipiDev
 {
@@ -63,71 +64,116 @@ public class TaskList : MonoBehaviour
     }
     #endregion
 
+    public int pickedTrash = 0;
+    public int totalTrash = 0;
+
+    public int reusabledTrash = 0;
+    public int totalReusableTrash = 0;
 
 
 
-    public List<ChipiDev.Task> list;
+    //public List<ChipiDev.Task> list;
     public TextMeshPro[] textsField;
 
     // Start is called before the first frame update
     void Start()
     {
-        //* Analizamos la escena y creamos a lista de objetos a recoger
         Trash[] trash = FindObjectsOfType<Trash>();
-        for (int i = 0; i < trash.Length; i++)
-        {
-            bool found = false;
-            for (int h = 0; h < list.Count; h++)
-            {
-                if (list[h].trashName == trash[i].name)
-                {
-                    found = true;
-                }
-            }
-            if (!found)
-            {
-                ChipiDev.Task newList = new ChipiDev.Task();
-                newList.trashName = trash[i].name;
-                list.Add(newList);
-            }
-        }
+        totalTrash = trash.Length;
 
-        //* Vamos a checkear ahora la cantidad
-        for (int i = 0; i < trash.Length; i++)
-        {
-            for (int h = 0; h < list.Count; h++)
-            {
-                if (list[h].trashName == trash[i].name)
-                {
-                    list[h].ammountRemaining++;
-                }
-            }
-        }
+        Reusable[] reusable = FindObjectsOfType<Reusable>();
+        totalReusableTrash = reusable.Length;
 
-        //* Habilitamos y editamos los textos correspondientes
-        for (int i = 0; i < textsField.Length; i++)
-        {
-            textsField[i].gameObject.SetActive(false);
-        }
+        UpdateListText();
 
-        for (int i = 0; i < list.Count; i++)
-        {
-            list[i].textField = textsField[i];
-            list[i].textField.gameObject.SetActive(true);
-            list[i].UpdateText();
-        }
+        #region Código antiguo que analiza toda la basura
+        //* Analizamos la escena y creamos a lista de objetos a recoger
+        //Trash[] trash = FindObjectsOfType<Trash>();
+        //for (int i = 0; i < trash.Length; i++)
+        //{
+        //    bool found = false;
+        //    for (int h = 0; h < list.Count; h++)
+        //    {
+        //        if (list[h].trashName == trash[i].name)
+        //        {
+        //            found = true;
+        //        }
+        //    }
+        //    if (!found)
+        //    {
+        //        ChipiDev.Task newList = new ChipiDev.Task();
+        //        newList.trashName = trash[i].name;
+        //        list.Add(newList);
+        //    }
+        //}
+
+        ////* Vamos a checkear ahora la cantidad
+        //for (int i = 0; i < trash.Length; i++)
+        //{
+        //    for (int h = 0; h < list.Count; h++)
+        //    {
+        //        if (list[h].trashName == trash[i].name)
+        //        {
+        //            list[h].ammountRemaining++;
+        //        }
+        //    }
+        //}
+
+        ////* Habilitamos y editamos los textos correspondientes
+        //for (int i = 0; i < textsField.Length; i++)
+        //{
+        //    textsField[i].gameObject.SetActive(false);
+        //}
+
+        //for (int i = 0; i < list.Count; i++)
+        //{
+        //    list[i].textField = textsField[i];
+        //    list[i].textField.gameObject.SetActive(true);
+        //    list[i].UpdateText();
+        //}
+        #endregion
 
     }
 
     public void PickUpTrash(Trash trash)
     {
-        for (int i = 0; i < list.Count; i++)
+        pickedTrash++;
+        UpdateListText();
+
+        //for (int i = 0; i < list.Count; i++)
+        //{
+        //    if (list[i].trashName == trash.name)
+        //    {
+        //        list[i].ammountPicked++;
+        //        list[i].UpdateText();
+        //    }
+        //}
+    }
+
+    public void ReusableTrash(Reusable reusable)
+    {
+        reusabledTrash++;
+        UpdateListText();
+    }
+
+    public void UpdateListText()
+    {
+        textsField[0].text = "Recycled: " + pickedTrash.ToString() + "/" + totalTrash.ToString();
+        textsField[1].text = "Reused: " + reusabledTrash.ToString() + "/" + totalReusableTrash.ToString();
+
+        if (pickedTrash == totalTrash)
         {
-            if (list[i].trashName == trash.name)
-            {
-                list[i].ammountPicked++;
-                list[i].UpdateText();
-            }
+            textsField[0].fontStyle = FontStyles.Strikethrough;
+        }
+
+        if (reusabledTrash == totalReusableTrash)
+        {
+            textsField[1].fontStyle = FontStyles.Strikethrough;
+        }
+
+        if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash)
+        {
+            Debug.Log("Hemos ganao");
         }
     }
 }
