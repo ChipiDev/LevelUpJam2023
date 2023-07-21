@@ -14,6 +14,11 @@ public class Reusable : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        Pickup();
+    }
+
+    public void Pickup()
+    {
         gameObject.SetActive(false);
         newBackgroundObject.SetActive(true);
     }
