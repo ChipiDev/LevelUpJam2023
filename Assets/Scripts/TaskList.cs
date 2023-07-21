@@ -84,7 +84,7 @@ public class TaskList : MonoBehaviour
         Reusable[] reusable = FindObjectsOfType<Reusable>();
         totalReusableTrash = reusable.Length;
 
-        UpdateListText();
+        UpdateList();
 
         #region Código antiguo que analiza toda la basura
         //* Analizamos la escena y creamos a lista de objetos a recoger
@@ -138,7 +138,7 @@ public class TaskList : MonoBehaviour
     public void PickUpTrash(Trash trash)
     {
         pickedTrash++;
-        UpdateListText();
+        UpdateList();
 
         //for (int i = 0; i < list.Count; i++)
         //{
@@ -153,10 +153,10 @@ public class TaskList : MonoBehaviour
     public void ReusableTrash(Reusable reusable)
     {
         reusabledTrash++;
-        UpdateListText();
+        UpdateList();
     }
 
-    public void UpdateListText()
+    public void UpdateList()
     {
         textsField[0].text = "Recycled: " + pickedTrash.ToString() + "/" + totalTrash.ToString();
         textsField[1].text = "Reused: " + reusabledTrash.ToString() + "/" + totalReusableTrash.ToString();

@@ -35,15 +35,17 @@ public class CameraController : MonoBehaviour
             if (mouseCoord.x > rightOffset)
             {
                 Vector3 space = Vector3.right * speed * Time.deltaTime;
-                //float multipliyer = (mouseCoord.x - (resolution.x - rightOffset)) / rightOffset;
-                //Debug.Log(multipliyer);
-                //space *= multipliyer;
+                float multipliyer = (mouseCoord.x - rightOffset) / (resolution.x - rightOffset);
+                space *= multipliyer;
 
                 transform.position += space;
             }
             else if (mouseCoord.x < leftOffset)
             {
                 Vector3 space = -Vector3.right * speed * Time.deltaTime;
+                float multipliyer = (leftOffset - mouseCoord.x) / leftOffset;
+                space *= multipliyer;
+
                 transform.position += space;
             }
 
