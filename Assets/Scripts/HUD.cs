@@ -30,6 +30,10 @@ public class HUD : MonoBehaviour
 
     }
 
+    public void Back(){
+        SceneManager.LoadScene("MainMenu");
+    }
+
     #region Tutorial
 
     public void OnTutorialAdvaceClicked()
@@ -39,7 +43,7 @@ public class HUD : MonoBehaviour
         {
             if (tutorialPanel.transform.GetChild(i).gameObject.activeInHierarchy)
             {
-                // Activamos el próximo elemento
+                // Activamos el prï¿½ximo elemento
                 tutorialPanel.transform.GetChild(i).gameObject.SetActive(false);
                 tutorialPanel.transform.GetChild(i + 1).gameObject.SetActive(true);
                 break;
@@ -52,7 +56,7 @@ public class HUD : MonoBehaviour
         int childrenCount = tutorialPanel.transform.childCount;
         for (int i = 0; i < childrenCount; i++)
         {
-            // Activamos el próximo elemento
+            // Activamos el prï¿½ximo elemento
             tutorialPanel.transform.GetChild(i).gameObject.SetActive(false);
         }
         tutorialPanel.transform.GetChild(0).gameObject.SetActive(true);
