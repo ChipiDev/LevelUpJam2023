@@ -20,17 +20,15 @@ public class GameManager : MonoBehaviour
         container3.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeMechanic(){
         container1.SetActive(!reciclarActivo);
         container2.SetActive(!reciclarActivo);
         container3.SetActive(!reciclarActivo);
 
         reciclarActivo = !reciclarActivo;
+    }
+
+    public bool GetReciclarActive(){
+        return reciclarActivo;
     }
 }

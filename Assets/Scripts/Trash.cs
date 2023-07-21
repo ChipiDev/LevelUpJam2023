@@ -21,6 +21,8 @@ public class Trash : MonoBehaviour
     public Collider2D collider2Dcollider;
     Vector3 restorePosition;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +32,13 @@ public class Trash : MonoBehaviour
         overlay.SetActive(false);
 
         collider2Dcollider = GetComponent<Collider2D>();
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
     {
-        if (Trash.pickedTrash)
+        if (Trash.pickedTrash && gameManager.GetReciclarActive())
         {
             DeactivateOverlay();
         }
@@ -42,31 +46,46 @@ public class Trash : MonoBehaviour
 
 
     /*
-    * Función llamada cuando pasamos el mouse por encima, hacemos overlay del sprite
+    * Funciï¿½n llamada cuando pasamos el mouse por encima, hacemos overlay del sprite
     */
     public void OnMouseEnter()
     {
-        ActivateOverlay();
+        if(gameManager.GetReciclarActive()){
+            ActivateOverlay();
+        }else{
+            //Cosas y sonidos de error
+            Debug.Log("Reutilizar activo");
+        }
     }
 
     public void OnMouseExit()
     {
-        DeactivateOverlay();
+        if(gameManager.GetReciclarActive()){
+            DeactivateOverlay();
+        }else{
+            //Cosas y sonidos de error
+            Debug.Log("Reutilizar activo");
+        }
     }
 
 
     /*
-     * Función llamada cuando clickamos el objeto
+     * Funciï¿½n llamada cuando clickamos el objeto
      */
     public void OnMouseDown()
     {
-        Trash.pickedTrash = this;
-        restorePosition = transform.position;
-        collider2Dcollider.enabled = false;
+        if(gameManager.GetReciclarActive()){
+            Trash.pickedTrash = this;
+            restorePosition = transform.position;
+            collider2Dcollider.enabled = false;
+        }else{
+            //Cosas y sonidos de error
+            Debug.Log("Reutilizar activo");
+        }
     }
 
     /*
-     * Función llamada cuando levantamos el mouse encima del objeto
+     * Funciï¿½n llamada cuando levantamos el mouse encima del objeto
      */
     public void OnMouseUp()
     {
@@ -78,7 +97,12 @@ public class Trash : MonoBehaviour
             Trash.pickedTrash = null;
         }
 
-        StartCoroutine(cor());
+        if(gameManager.GetReciclarActive()){
+            StartCoroutine(cor());
+        }else{
+            //Cosas y sonidos de error
+            Debug.Log("Reutilizar activo");  
+        }
     }
 
     private void ActivateOverlay()
