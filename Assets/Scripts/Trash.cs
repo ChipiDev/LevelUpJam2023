@@ -13,6 +13,7 @@ public class Trash : MonoBehaviour
     public ETrashType type;
 
     public static Trash pickedTrash = null;
+    [SerializeField]
     private GameObject overlay;
     [HideInInspector]
     public Collider2D collider2Dcollider;
@@ -24,23 +25,9 @@ public class Trash : MonoBehaviour
     void Start()
     {
         restorePosition = transform.position;
-
-        overlay = new GameObject();
-        overlay.name = "overlay";
-        overlay.AddComponent<SpriteRenderer>();
-        overlay.transform.parent = transform;
+        overlay.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
         overlay.transform.localScale = Vector3.one * 1.23f;
-        overlay.transform.localPosition = Vector3.zero;
-
-        standardOverlayIndex = GetComponent<SpriteRenderer>().sortingOrder;
-
-        overlay.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
-        overlay.GetComponent<SpriteRenderer>().color = Color.white;
-        overlay.GetComponent<SpriteRenderer>().sortingOrder = standardOverlayIndex - 1;
-
         overlay.SetActive(false);
-
-        collider2Dcollider = GetComponent<Collider2D>();
     }
 
     private void Update()
