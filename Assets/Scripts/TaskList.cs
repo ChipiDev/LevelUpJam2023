@@ -121,7 +121,7 @@ public class TaskList : MonoBehaviour
 
     public void PickUpTrash(Trash trash)
     {
-        for (int i = 0; i <= list.Count; i++)
+        for (int i = 0; i < list.Count; i++)
         {
             if (list[i].trashName == trash.name)
             {
