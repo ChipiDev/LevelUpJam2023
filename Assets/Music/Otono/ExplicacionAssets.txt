@@ -1,0 +1,10 @@
+Otoño_exploracion
+	Es la musica que va a sonar a lo largo de todo el nivel de otoño
+	Cuando haya contaminacion sonará con un efecto de enmascaramiento (como cuando entras al agua
+en un juego que sigue sonando la musica pero mas leve) que poco a poco irá desapareciendo con una automatizacion
+	
+Otoño_win
+	Es el stinger que suena cuando acaba el nivel por haberlo superado para compensar a l@s jugador@s
+
+Otoño_lose
+	Es el stinger que suena cuando acaba el nivel por no haberlo superado para penalizar a l@s jugador@s
