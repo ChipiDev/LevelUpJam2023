@@ -10,7 +10,9 @@ public class MainMenu : MonoBehaviour
     public GameObject controlsMenu;
     public GameObject creditsMenu;
     public GameObject gameTittle;
-    public GameObject laguagesButtons;
+    public GameObject spainButton;
+    public GameObject englishButton;
+    public GameObject laguagesText;
     public GameObject levelSelectionMenu;
 
     // Start is called before the first frame update
@@ -21,7 +23,9 @@ public class MainMenu : MonoBehaviour
         creditsMenu.SetActive(false);
         levelSelectionMenu.SetActive(false);
         gameTittle.SetActive(true);
-        laguagesButtons.SetActive(true);
+        spainButton.SetActive(true);
+        englishButton.SetActive(true);
+        laguagesText.SetActive(true);
 
         #if UNITY_WEBGL
                exitButton.SetActive(false);
@@ -32,7 +36,9 @@ public class MainMenu : MonoBehaviour
     {
         levelSelectionMenu.SetActive(true);
         gameTittle.SetActive(false);
-        laguagesButtons.SetActive(false);
+        spainButton.SetActive(false);
+        englishButton.SetActive(false);
+        laguagesText.SetActive(false);
         controlsMenu.SetActive(false);
         creditsMenu.SetActive(false);
         mainMenuOptions.SetActive(false);
@@ -40,7 +46,9 @@ public class MainMenu : MonoBehaviour
 
     public void OnControlsButtonClicked()
     {
-        laguagesButtons.SetActive(false);
+        spainButton.SetActive(false);
+        englishButton.SetActive(false);
+        laguagesText.SetActive(false);
         gameTittle.SetActive(false);
         controlsMenu.SetActive(true);
         levelSelectionMenu.SetActive(false);
@@ -50,7 +58,9 @@ public class MainMenu : MonoBehaviour
 
     public void OnCreditsButtonClicked()
     {
-        laguagesButtons.SetActive(false);
+        spainButton.SetActive(false);
+        englishButton.SetActive(false);
+        laguagesText.SetActive(false);
         gameTittle.SetActive(false);
         creditsMenu.SetActive(true);
         levelSelectionMenu.SetActive(false);
@@ -60,7 +70,9 @@ public class MainMenu : MonoBehaviour
 
     public void OnBackButtonClicked()
     {
-        laguagesButtons.SetActive(true);
+        spainButton.SetActive(true);
+        englishButton.SetActive(true);
+        laguagesText.SetActive(true);
         gameTittle.SetActive(true);
         mainMenuOptions.SetActive(true);
         controlsMenu.SetActive(false);
