@@ -164,9 +164,6 @@ public class TaskList : MonoBehaviour
         if (pickedTrash == totalTrash)
         {
             textsField[0].fontStyle = FontStyles.Strikethrough;
-            Debug.Log(PlayerPrefs.GetInt("Nivel"));
-            PlayerPrefs.SetInt("Nivel", PlayerPrefs.GetInt("Nivel") + 1);
-            Debug.Log(PlayerPrefs.GetInt("Nivel"));
         }
 
         if (reusabledTrash == totalReusableTrash)

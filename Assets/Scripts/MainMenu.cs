@@ -51,8 +51,6 @@ public class MainMenu : MonoBehaviour
             #endif
         }
 
-        Debug.Log(PlayerPrefs.GetInt("Nivel"));
-
         level2.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
         level3.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
         level4.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
