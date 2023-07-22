@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -193,6 +194,17 @@ public class MainMenu : MonoBehaviour
         spainButton.SetActive(true);
         englishButton.SetActive(true);
         laguagesText.SetActive(true);
+    }
+
+    public void SetSpanishLanguage()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+    }
+
+    public void SetEnglishLanguage()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+
     }
 
 }
