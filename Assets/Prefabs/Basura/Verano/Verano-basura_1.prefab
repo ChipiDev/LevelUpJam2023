@@ -29,7 +29,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1367129154247503204}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101,3 +102,65 @@ MonoBehaviour:
   type: 1
   overlay: {fileID: 4875004320001584132, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
   collider2Dcollider: {fileID: 0}
+--- !u!1001 &1947740210375881586
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2433161566258832434}
+    m_Modifications:
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4875004320001584132, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+      propertyPath: m_Name
+      value: Verano-basura_55
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+--- !u!4 &1367129154247503204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 720232747447246358, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+  m_PrefabInstance: {fileID: 1947740210375881586}
+  m_PrefabAsset: {fileID: 0}
