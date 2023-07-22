@@ -49,9 +49,8 @@ public class HUD : MonoBehaviour
         if (SceneManager.GetActiveScene().name.Contains('1'))
         {
             // Es el primer escenario, iniciamos tutorial
-            tutorialPanel.SetActive(true);
+            // tutorialPanel.SetActive(true);
             gameplayPanel.SetActive(false);
-
         }
         else
         {
@@ -83,6 +82,7 @@ public class HUD : MonoBehaviour
             yield return null;
         }
         fadeImage.gameObject.SetActive(false);
+        Dialogue.Instance.Activate();
     }
 
     #region Tutorial

@@ -170,7 +170,7 @@ public class TaskList : MonoBehaviour
         //}
     }
 
-    public void ReusableTrash(Reusable reusable)
+    public void ReusableTrash()
     {
         reusabledTrash++;
         UpdateList();
@@ -196,12 +196,33 @@ public class TaskList : MonoBehaviour
             Debug.Log("Hemos ganao");
             int sceneNumber = SceneManager.GetActiveScene().buildIndex - 1;
             PlayerPrefs.SetInt("Nivel" + sceneNumber.ToString(), 1);
+            Dialogue.Instance.ActivateFinal();
+            //Sonido de triunfo
+            //Muñeco gesto feliz
         }
+    }
+
+    private void OnEnable() {
+        Dialogue.onConversationEnded += OnConversationEnded;
+    }
+
+    private void OnDisable() {
+        Dialogue.onConversationEnded -= OnConversationEnded;
+    }
+
+    private void OnConversationEnded(){
+        if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash){
+            int sceneNumber = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(sceneNumber + 1);
+        }else{
+            Dialogue.Instance.Deactivate();
+        }
+        
     }
 
     private void OnMouseDown()
     {
-        if (HUD.Instance.isInTutorial) { return; }
+        if (Dialogue.Instance.IsActive()) return;
         show = !show;
     }
 

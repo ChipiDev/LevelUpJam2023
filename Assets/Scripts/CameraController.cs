@@ -18,12 +18,12 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HUD.Instance.isInTutorial || !Application.isFocused) { return; }
+        if (Dialogue.Instance.IsActive() || !Application.isFocused) { return; }
         Vector3 view = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         bool isOutside = view.x < 0 || view.x > 1 || view.y < 0 || view.y > 1;
         if (isOutside) { return; }
 
-        #region Movimiento de cámara
+        #region Movimiento de cï¿½mara
 
         if (!Trash.pickedTrash)
         {
