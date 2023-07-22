@@ -38,6 +38,20 @@ MonoBehaviour:
     m_Localized: VOLUMEN
     m_Metadata:
       m_Items: []
+  - m_Id: 51698132926464
+    m_Localized: hol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52853458157568
+    m_Localized: "Hola! Mi nombre es Cocogoose y te doy la bienvenida en tu primer
+      d\xEDa en Sustainature!|Como puedes ver, tenemos un paisaje precioso pero lleno
+      de restos de basura. \xA1Nuestro trabajo es arreglarlo!|Ver\xE1s que hay diversos
+      contenedores para reciclar los objetos que encontremos. Tendr\xE1s que arrastrarlos
+      al contenedor correcto.|Tambi\xE9n encontrar\xE1s alg\xFAn objeto que se puede
+      aprovechar. Cerca de la libreta ver\xE1s la opci\xF3n de reutilizar.|Si necesitas
+      ayuda, podr\xE1s consultar en la libreta las tareas pendientes.|\xBFEmpezamos?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
+    public string allTexts;
     [SerializeField] private GameObject box;
     [SerializeField] private TMP_Text text;
 
-    [SerializeField] private List<string> textList;
+    [SerializeField] private string[] textList;
     private int listIndex;
     public bool isActive;
 
@@ -50,6 +51,10 @@ public class Dialogue : MonoBehaviour
         gameObject.GetComponent<Collider2D>().enabled = false;
         isActive = false;
         isFinal = false;
+
+        Debug.Log(allTexts);
+        textList = allTexts.Split('|');
+
     }
 
     private void Update() {
@@ -65,7 +70,7 @@ public class Dialogue : MonoBehaviour
             return;
         }
         listIndex++;
-        if(listIndex < textList.Count)
+        if(listIndex < textList.Length)
             text.text = textList[listIndex];
         else{
             onConversationEnded?.Invoke();

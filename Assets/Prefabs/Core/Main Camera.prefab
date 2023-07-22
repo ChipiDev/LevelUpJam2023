@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 6732818007231856771}
   - component: {fileID: 1413616160348479152}
   - component: {fileID: 6749904643033044268}
+  - component: {fileID: 1492555682}
   m_Layer: 0
   m_Name: Dialogue
   m_TagString: Untagged
@@ -248,13 +249,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be24bbadea8e1f94dbbc4e38d3fda6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allTexts: Hola|adios
   box: {fileID: 4729079086808080837}
   text: {fileID: 3565503777588336196}
-  textList:
-  - Hola
-  - Que tal
-  - Tutorial
+  textList: []
   isActive: 0
+--- !u!114 &1492555682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358320231282192694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 3677259978004496516
+  references:
+    version: 2
+    RefIds:
+    - rid: 3677259978004496516
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 6749904643033044268}
+        m_TrackedProperties:
+          items:
+          - rid: 3677259978004496517
+          - rid: 3677259978004496518
+        m_UpdateType: 0
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 3677259978004496517
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:e8e56313afac4244bb3a32f35c739709
+          m_TableEntryReference:
+            m_KeyId: 51698132926464
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: testString
+    - rid: 3677259978004496518
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:e8e56313afac4244bb3a32f35c739709
+          m_TableEntryReference:
+            m_KeyId: 52853458157568
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: allTexts
 --- !u!1 &3420316143451725055
 GameObject:
   m_ObjectHideFlags: 0
