@@ -59,7 +59,7 @@ public class Character : MonoBehaviour
                 Trash.pickedTrash.Restore();
                 Trash.pickedTrash = null;
 
-                SetAngry();
+                Jump();
             }
         }
 
