@@ -29,7 +29,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1493504742855002344}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,5 +100,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Botella
   type: 1
-  overlay: {fileID: 9005256329191623076, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+  overlay: {fileID: 8442944748708168740}
   collider2Dcollider: {fileID: 0}
+--- !u!1001 &707704435732516224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8891773123483593541}
+    m_Modifications:
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005256329191623076, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+      propertyPath: m_Name
+      value: "Oto\xF1o-basura_00"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+--- !u!4 &1493504742855002344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2119994525294642536, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+  m_PrefabInstance: {fileID: 707704435732516224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8442944748708168740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9005256329191623076, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+  m_PrefabInstance: {fileID: 707704435732516224}
+  m_PrefabAsset: {fileID: 0}
