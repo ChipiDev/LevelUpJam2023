@@ -45,7 +45,7 @@ public class KeyPassword : MonoBehaviour
 
             key = string.Empty;
             PlayerPrefs.SetInt("Nivel0", 1);
-            PlayerPrefs.SetInt("Nivel1", 1);
+            PlayerPrefs.SetInt("Nivel1", 0);
             PlayerPrefs.SetInt("Nivel2", 0);
             PlayerPrefs.SetInt("Nivel3", 0);
 

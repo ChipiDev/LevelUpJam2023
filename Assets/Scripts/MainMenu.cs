@@ -58,6 +58,7 @@ public class MainMenu : MonoBehaviour
                 PlayerPrefs.SetInt("FirstTime", -1);
         }
 #endif
+        PlayerPrefs.SetInt("Nivel0", 1);
 
         for (int i = 0; i < levels.Length; i++)
         {
