@@ -197,17 +197,17 @@ public class TaskList : MonoBehaviour
         }
     }
 
-    private void OnMouseEnter()
+    private void OnMouseDown()
     {
         if (HUD.Instance.isInTutorial) { return; }
-        show = true;
+        show = !show;
     }
 
-    private void OnMouseExit()
-    {
-        if (HUD.Instance.isInTutorial) { return; }
-        show = false;
-    }
+    //private void OnMouseExit()
+    //{
+    //    if (HUD.Instance.isInTutorial) { return; }
+    //    show = false;
+    //}
 
 
 }
