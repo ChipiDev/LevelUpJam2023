@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioMixer audioMixer;
     public GameObject fadePanel;
     public GameObject exitButton;
     public GameObject mainMenuOptions;
@@ -24,6 +27,8 @@ public class MainMenu : MonoBehaviour
     public GameObject chaptersBackground;
     public GameObject tutorialbackground;
     [SerializeField] private Button[] levels;
+
+    public Slider volumeSlider;
 
     private bool isLoadingLevel = false;
     // Start is called before the first frame update
@@ -73,28 +78,9 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-        //level2.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-        //level3.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-        //level4.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        audioMixer.GetFloat("Volume", out float volume);
+        volumeSlider.value = -Mathf.Sqrt(Mathf.Abs(volume));
 
-        if (PlayerPrefs.GetInt("Nivel") == 1)
-        {
-            //level2.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-        }
-        else if (PlayerPrefs.GetInt("Nivel") == 2)
-        {
-            //level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-
-        }
-        else if (PlayerPrefs.GetInt("Nivel") == 3)
-        {
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-        }
-
-        Debug.Log(PlayerPrefs.GetInt("Nivel"));
     }
 
     public void OnStartGameButtonClicked()
@@ -193,6 +179,21 @@ public class MainMenu : MonoBehaviour
         spainButton.SetActive(true);
         englishButton.SetActive(true);
         laguagesText.SetActive(true);
+    }
+
+    public void SetSpanishLanguage()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+    }
+
+    public void SetEnglishLanguage()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+    }
+
+    public void OnVolumeSliderChange(float value)
+    {
+        audioMixer.SetFloat("Volume", -(value * value));
     }
 
 }
