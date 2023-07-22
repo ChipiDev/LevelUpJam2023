@@ -38,14 +38,14 @@ public class MainMenu : MonoBehaviour
         }
         StartCoroutine(fadeOutCor());
 
-        mainMenuOptions.SetActive(true);
-        controlsMenu.SetActive(false);
-        creditsMenu.SetActive(false);
-        levelSelectionMenu.SetActive(false);
-        gameTittle.SetActive(true);
-        spainButton.SetActive(true);
-        englishButton.SetActive(true);
-        laguagesText.SetActive(true);
+        if (GameManager.levelPlayed)
+        {
+            OnStartGameButtonClicked();
+        }
+        else
+        {
+            InitialiceStartScene();
+        }
 
 #if UNITY_WEBGL
         exitButton.SetActive(false);
@@ -162,7 +162,7 @@ public class MainMenu : MonoBehaviour
 
         IEnumerator waitCor()
         {
-            // Restamos 1 para no contar el menú principal
+            // Restamos 1 para no contar el menï¿½ principal
             isLoadingLevel = true;
             fadePanel.gameObject.SetActive(true);
             fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
@@ -180,6 +180,18 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
         Application.Quit();
+    }
+
+    private void InitialiceStartScene()
+    {
+        mainMenuOptions.SetActive(true);
+        controlsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
+        levelSelectionMenu.SetActive(false);
+        gameTittle.SetActive(true);
+        spainButton.SetActive(true);
+        englishButton.SetActive(true);
+        laguagesText.SetActive(true);
     }
 
 }
