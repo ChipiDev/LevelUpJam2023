@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class HUD : MonoBehaviour
 {
     public GameObject tutorialPanel;
     public GameObject gameplayPanel;
+    public Image fadeImage;
 
     void Start()
     {
@@ -22,6 +25,7 @@ public class HUD : MonoBehaviour
             tutorialPanel.SetActive(false);
             gameplayPanel.SetActive(true);
         }
+        StartCoroutine(FadeOutCor());
     }
 
     // Update is called once per frame
@@ -30,8 +34,21 @@ public class HUD : MonoBehaviour
 
     }
 
-    public void Back(){
+    public void Back()
+    {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private IEnumerator FadeOutCor()
+    {
+        float duration = 3;
+        fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 1);
+        while (fadeImage.color.a > 0)
+        {
+            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, fadeImage.color.a - (Time.deltaTime / duration));
+            yield return null;
+        }
+        fadeImage.gameObject.SetActive(false);
     }
 
     #region Tutorial
