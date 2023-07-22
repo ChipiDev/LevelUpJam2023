@@ -12,10 +12,12 @@ public class Dialogue : MonoBehaviour
 
     [SerializeField] private List<string> textList;
     private int listIndex;
-    private bool isActive;
+    public bool isActive;
 
     public delegate void OnConversationEnded();
     public static event OnConversationEnded onConversationEnded;
+
+    private bool isFinal;
 
     private static Dialogue instance;
     public static Dialogue Instance
@@ -47,6 +49,7 @@ public class Dialogue : MonoBehaviour
         box.SetActive(false);
         gameObject.GetComponent<Collider2D>().enabled = false;
         isActive = false;
+        isFinal = false;
     }
 
     private void Update() {
@@ -57,6 +60,10 @@ public class Dialogue : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        if(isFinal) {
+            onConversationEnded?.Invoke();
+            return;
+        }
         listIndex++;
         if(listIndex < textList.Count)
             text.text = textList[listIndex];
@@ -71,6 +78,18 @@ public class Dialogue : MonoBehaviour
         text.text = textList[0];
         listIndex = 0;
         isActive = true;
+    }
+
+    public void ActivateFinal(){
+        Activate();
+        text.text = "Veo que se te da muy bien esto!! ¿Alguien dijo fiesta?";
+        isFinal = true;
+    }
+
+    public void Deactivate(){
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        box.SetActive(false);
+        isActive = false;
     }
 
     public bool IsActive(){
