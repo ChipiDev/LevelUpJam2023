@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9215599435445722213}
   - component: {fileID: 7819612569728670394}
+  - component: {fileID: 7915135974328603301}
   m_Layer: 0
   m_Name: Primavera-basura_9
   m_TagString: Untagged
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7915135974328603301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950002951656892302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff39a105cbcc9548b48baf66f218e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBackgroundObject: {fileID: 0}

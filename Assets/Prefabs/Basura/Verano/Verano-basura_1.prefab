@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2433161566258832434}
   - component: {fileID: 3846935748564864412}
+  - component: {fileID: -3693100418339221620}
   m_Layer: 0
   m_Name: Verano-basura_1
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3693100418339221620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396541985507357079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Botella1
+  type: 1
+  overlay: {fileID: 4875004320001584132, guid: 72dc5d7f4c63cc248b3a41a710b0e344, type: 3}
+  collider2Dcollider: {fileID: 0}

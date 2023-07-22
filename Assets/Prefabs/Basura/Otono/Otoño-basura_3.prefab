@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8871638266638255646}
   - component: {fileID: 7967315514841168128}
+  - component: {fileID: -2431401589786415071}
   m_Layer: 0
   m_Name: "Oto\xF1o-basura_3"
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2431401589786415071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721648185982554098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Rollo2
+  type: 2
+  overlay: {fileID: 4882138627299283430, guid: b13f10a48658c864c8356ebd529ae3ad, type: 3}
+  collider2Dcollider: {fileID: 0}

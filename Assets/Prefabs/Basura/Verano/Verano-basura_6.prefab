@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665943963444894821}
   - component: {fileID: 3782300927005322801}
+  - component: {fileID: -839536020236255728}
   m_Layer: 0
   m_Name: Verano-basura_6
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-839536020236255728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456801690097859789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Lata1
+  type: 0
+  overlay: {fileID: 5560891963716333747, guid: 53858d237e590e04b824ba8875962b61, type: 3}
+  collider2Dcollider: {fileID: 0}
