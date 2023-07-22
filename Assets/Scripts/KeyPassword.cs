@@ -40,16 +40,14 @@ public class KeyPassword : MonoBehaviour
 
         if (key == keyWord)
         {
+            Debug.Log("Restart game");
+
+            key = string.Empty;
+            PlayerPrefs.SetInt("Nivel", 0);
+            SceneManager.LoadScene(0);
             Destroy(gameObject);
         }
 
     }
 
-    private void OnDestroy()
-    {
-        Debug.Log("Restart game");
-        key = string.Empty;
-        PlayerPrefs.SetInt("Nivel", 0);
-        SceneManager.LoadScene(0);
-    }
 }

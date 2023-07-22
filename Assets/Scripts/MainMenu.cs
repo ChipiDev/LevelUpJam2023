@@ -29,7 +29,15 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PanelFadeIn(2000);
+        IEnumerator fadeOutCor()
+        {
+            fadePanel.gameObject.SetActive(true);
+            fadePanel.gameObject.GetComponent<Animator>().Play("FadeIn");
+            yield return new WaitForSeconds(2);
+            fadePanel.gameObject.SetActive(false);
+        }
+        StartCoroutine(fadeOutCor());
+
         mainMenuOptions.SetActive(true);
         controlsMenu.SetActive(false);
         creditsMenu.SetActive(false);
@@ -148,44 +156,35 @@ public class MainMenu : MonoBehaviour
         levelSelectionMenu.SetActive(false);
     }
 
-    public async void OnLevelButtonClicked(int levelIndex)
+    public void OnLevelButtonClicked(int levelIndex)
     {
         if (isLoadingLevel) return;
 
         Debug.Log("Nivel desbloqueado: " + PlayerPrefs.GetInt("Nivel"));
-        // Restamos 1 para no contar el menú principal
-        if (PlayerPrefs.GetInt("Nivel") >= (levelIndex - 1))
+
+        IEnumerator waitCor()
         {
-            isLoadingLevel = true;
-            await PanelFadeOut(3000);
-            SceneManager.LoadScene(levelIndex);
+            // Restamos 1 para no contar el menú principal
+            if (PlayerPrefs.GetInt("Nivel") >= (levelIndex - 1))
+            {
+                isLoadingLevel = true;
+                fadePanel.gameObject.SetActive(true);
+                fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
+                yield return new WaitForSeconds(3);
+                SceneManager.LoadScene(levelIndex);
+            }
         }
+        StartCoroutine(waitCor());
     }
 
-    public async void OnExitButtonClicked()
+    public void OnExitButtonClicked()
     {
         if (isLoadingLevel) return;
 
-        await PanelFadeOut(3000);
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
         Application.Quit();
-    }
-
-    private async void PanelFadeIn(int delay)
-    {
-        fadePanel.gameObject.SetActive(true);
-        fadePanel.gameObject.GetComponent<Animator>().Play("FadeIn");
-        await Task.Delay(delay);
-        fadePanel.gameObject.SetActive(false);
-    }
-
-    private async Task PanelFadeOut(int delay)
-    {
-        fadePanel.gameObject.SetActive(true);
-        fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
-        await Task.Delay(delay);
     }
 
 }

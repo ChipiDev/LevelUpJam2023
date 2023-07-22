@@ -50,9 +50,13 @@ public class Trash : MonoBehaviour
     */
     public void OnMouseEnter()
     {
-        if(gameManager.GetReciclarActive()){
+        if (HUD.Instance.isInTutorial) return;
+        if (gameManager.GetReciclarActive())
+        {
             ActivateOverlay();
-        }else{
+        }
+        else
+        {
             //Cosas y sonidos de error
             Debug.Log("Reutilizar activo");
         }
@@ -60,9 +64,14 @@ public class Trash : MonoBehaviour
 
     public void OnMouseExit()
     {
-        if(gameManager.GetReciclarActive()){
+        if (HUD.Instance.isInTutorial) return;
+
+        if (gameManager.GetReciclarActive())
+        {
             DeactivateOverlay();
-        }else{
+        }
+        else
+        {
             //Cosas y sonidos de error
             Debug.Log("Reutilizar activo");
         }
@@ -74,11 +83,16 @@ public class Trash : MonoBehaviour
      */
     public void OnMouseDown()
     {
-        if(gameManager.GetReciclarActive()){
+        if (HUD.Instance.isInTutorial) return;
+
+        if (gameManager.GetReciclarActive())
+        {
             Trash.pickedTrash = this;
             restorePosition = transform.position;
             collider2Dcollider.enabled = false;
-        }else{
+        }
+        else
+        {
             //Cosas y sonidos de error
             Debug.Log("Reutilizar activo");
         }
@@ -89,6 +103,8 @@ public class Trash : MonoBehaviour
      */
     public void OnMouseUp()
     {
+        if (HUD.Instance.isInTutorial) return;
+
         IEnumerator cor()
         {
             yield return null;
@@ -97,11 +113,14 @@ public class Trash : MonoBehaviour
             Trash.pickedTrash = null;
         }
 
-        if(gameManager.GetReciclarActive()){
+        if (gameManager.GetReciclarActive())
+        {
             StartCoroutine(cor());
-        }else{
+        }
+        else
+        {
             //Cosas y sonidos de error
-            Debug.Log("Reutilizar activo");  
+            Debug.Log("Reutilizar activo");
         }
     }
 

@@ -6,9 +6,43 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
+    #region Singletone
+    private static HUD instance;
+    public static HUD Instance
+    {
+        get
+        {
+            if (instance != null)
+                return instance;
+            else
+            {
+                return null;
+            }
+
+        }
+        set
+        {
+            instance = value;
+        }
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+    #endregion
+
     public GameObject tutorialPanel;
     public GameObject gameplayPanel;
     public Image fadeImage;
+
+    public bool isInTutorial
+    {
+        get
+        {
+            return tutorialPanel.activeInHierarchy;
+        }
+    }
 
     void Start()
     {
