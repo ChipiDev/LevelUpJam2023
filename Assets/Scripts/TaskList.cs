@@ -70,7 +70,12 @@ public class TaskList : MonoBehaviour
     public int reusabledTrash = 0;
     public int totalReusableTrash = 0;
 
-
+    [Space(10)]
+    public float showSpeed = 6;
+    public float showHeight = 1.3f;
+    private Vector3 hidePosition;
+    private Vector3 showPosition;
+    private bool show = false;
 
     //public List<ChipiDev.Task> list;
     public TextMeshPro[] textsField;
@@ -78,6 +83,9 @@ public class TaskList : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hidePosition = transform.localPosition;
+        showPosition = hidePosition + Vector3.up * showHeight;
+
         Trash[] trash = FindObjectsOfType<Trash>();
         totalTrash = trash.Length;
 
@@ -135,6 +143,17 @@ public class TaskList : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (show)
+        {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, showPosition, Time.deltaTime * showSpeed);
+        }else
+        {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, hidePosition, Time.deltaTime * showSpeed);
+        }
+    }
+
     public void PickUpTrash(Trash trash)
     {
         pickedTrash++;
@@ -177,4 +196,18 @@ public class TaskList : MonoBehaviour
             PlayerPrefs.SetInt("Nivel", PlayerPrefs.GetInt("Nivel") + 1);
         }
     }
+
+    private void OnMouseEnter()
+    {
+        if (HUD.Instance.isInTutorial) { return; }
+        show = true;
+    }
+
+    private void OnMouseExit()
+    {
+        if (HUD.Instance.isInTutorial) { return; }
+        show = false;
+    }
+
+
 }
