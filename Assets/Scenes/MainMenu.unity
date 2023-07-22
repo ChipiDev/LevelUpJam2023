@@ -10017,6 +10017,7 @@ MonoBehaviour:
   - {fileID: 1168878690}
   - {fileID: 1011207390}
   - {fileID: 1618477172}
+  volumeSlider: {fileID: 816068040}
 --- !u!114 &1630924471
 MonoBehaviour:
   m_ObjectHideFlags: 0

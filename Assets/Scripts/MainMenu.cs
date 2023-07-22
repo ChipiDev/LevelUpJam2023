@@ -28,6 +28,8 @@ public class MainMenu : MonoBehaviour
     public GameObject tutorialbackground;
     [SerializeField] private Button[] levels;
 
+    public Slider volumeSlider;
+
     private bool isLoadingLevel = false;
     // Start is called before the first frame update
     void Start()
@@ -76,28 +78,9 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-        //level2.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-        //level3.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-        //level4.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        audioMixer.GetFloat("Volume", out float volume);
+        volumeSlider.value = -Mathf.Sqrt(Mathf.Abs(volume));
 
-        if (PlayerPrefs.GetInt("Nivel") == 1)
-        {
-            //level2.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-        }
-        else if (PlayerPrefs.GetInt("Nivel") == 2)
-        {
-            //level3.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-
-        }
-        else if (PlayerPrefs.GetInt("Nivel") == 3)
-        {
-            //level4.GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, 1f);
-        }
-
-        Debug.Log(PlayerPrefs.GetInt("Nivel"));
     }
 
     public void OnStartGameButtonClicked()
