@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff39a105cbcc9548b48baf66f218e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBackgroundObject: {fileID: 0}
+  newBackgroundObject: {fileID: 560676592}
 --- !u!50 &57856429
 Rigidbody2D:
   serializedVersion: 4
@@ -373,6 +373,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7478057937198448250, guid: 1666be439da7b9c40b92a273596785c1, type: 3}
   m_PrefabInstance: {fileID: 222860686}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &250951332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 587017043432950660, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_Name
+      value: "Primavera-casa-de-p\xE1jaros"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975421361551888928, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877807264113170587, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
 --- !u!1001 &276672648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -497,6 +558,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7478057937198448250, guid: d635578220b607d4bb49133e3c7f5ef7, type: 3}
   m_PrefabInstance: {fileID: 421037700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &560676592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 587017043432950660, guid: bd87559922ae3474fa235cb2009ea270, type: 3}
+  m_PrefabInstance: {fileID: 250951332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &560676593
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560676592}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59a7112af76bfa54bb5534fe6c51b967, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &626830623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,6 +1359,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1876175385369925085, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882597960403300222, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522197504716884867, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846752286705, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8936455847273479947, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1325,6 +1427,10 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 841092955}
+    - target: {fileID: 8977282360593297510, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
 --- !u!4 &1378644766 stripped
