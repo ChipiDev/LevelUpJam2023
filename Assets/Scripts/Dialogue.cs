@@ -57,13 +57,6 @@ public class Dialogue : MonoBehaviour
 
     }
 
-    private void Update() {
-        if (Input.GetKeyDown("space"))
-        {
-            Activate();
-        }
-    }
-
     private void OnMouseDown() {
         if(isFinal) {
             onConversationEnded?.Invoke();
