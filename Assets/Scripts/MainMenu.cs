@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioMixer audioMixer;
     public GameObject fadePanel;
     public GameObject exitButton;
     public GameObject mainMenuOptions;
@@ -204,7 +206,11 @@ public class MainMenu : MonoBehaviour
     public void SetEnglishLanguage()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+    }
 
+    public void OnVolumeSliderChange(float value)
+    {
+        audioMixer.SetFloat("Volume", -(value * value));
     }
 
 }

@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: MainMenu/MainMenuHUD/LanguageText
     m_Metadata:
       m_Items: []
+  - m_Id: 15325262856192
+    m_Key: MainMenu/MainMenuHUD/VolumenSlider/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

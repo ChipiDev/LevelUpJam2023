@@ -34,6 +34,10 @@ MonoBehaviour:
     m_Localized: IDIOMA
     m_Metadata:
       m_Items: []
+  - m_Id: 15325262856192
+    m_Localized: VOLUMEN
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
