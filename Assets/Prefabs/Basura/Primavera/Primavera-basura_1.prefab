@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2842130176114374755}
   - component: {fileID: 2234459262529646243}
+  - component: {fileID: 9112763359468988649}
   m_Layer: 0
   m_Name: Primavera-basura_1
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9112763359468988649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142232151388437938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Rollo2
+  type: 2
+  overlay: {fileID: 6541785470905641562, guid: ea749c16f8506414095003eb2e8cd25c, type: 3}
+  collider2Dcollider: {fileID: 0}

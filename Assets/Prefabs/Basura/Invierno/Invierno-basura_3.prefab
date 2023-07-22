@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4049446048468221414}
   - component: {fileID: 4329708651090275281}
+  - component: {fileID: 7575126439076363867}
   m_Layer: 0
   m_Name: Invierno-basura_3
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7575126439076363867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689021656079317788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: AnillasPlastico1
+  type: 0
+  overlay: {fileID: 4905996297243566682, guid: fdbfb073675a7bb48b252eaba26c1f2f, type: 3}
+  collider2Dcollider: {fileID: 0}

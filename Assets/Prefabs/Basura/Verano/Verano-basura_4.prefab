@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7508740368168217046}
   - component: {fileID: 9047924482359028705}
+  - component: {fileID: -4083689698431908915}
   m_Layer: 0
   m_Name: Verano-basura_4
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4083689698431908915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173578712164227681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: AnillaPlastico3
+  type: 0
+  overlay: {fileID: 136234372904311503, guid: 161f2da7f57b77f4180b816472d8436f, type: 3}
+  collider2Dcollider: {fileID: 0}

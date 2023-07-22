@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6981837451762487477}
   - component: {fileID: 3916548266979525066}
+  - component: {fileID: -4158389111690529067}
   m_Layer: 0
   m_Name: Primavera-basura_7
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4158389111690529067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796942266941111882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Pizza2
+  type: 2
+  overlay: {fileID: 6387309033059015182, guid: 8c8ae0a262626f2409d6ed26bdf5ae43, type: 3}
+  collider2Dcollider: {fileID: 0}

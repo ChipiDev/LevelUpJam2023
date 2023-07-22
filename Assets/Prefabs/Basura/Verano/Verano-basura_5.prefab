@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5628036465020965384}
   - component: {fileID: 6518929972025425983}
+  - component: {fileID: 8098973819240909450}
   m_Layer: 0
   m_Name: Verano-basura_5
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8098973819240909450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917710724609229213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Tetrabrick1
+  type: 0
+  overlay: {fileID: 4502012255259217431, guid: ca727c0432731b04e85e1c673fdca35f, type: 3}
+  collider2Dcollider: {fileID: 0}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5589707989386858260}
   - component: {fileID: 5134789684832415944}
+  - component: {fileID: 2388266171866031304}
   m_Layer: 0
   m_Name: Invierno-basura_8
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2388266171866031304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486189306519016304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Botella2
+  type: 1
+  overlay: {fileID: 6282381743249697093, guid: 1ab5c34b5d4bd0949917e4cc4c9d05ab, type: 3}
+  collider2Dcollider: {fileID: 0}

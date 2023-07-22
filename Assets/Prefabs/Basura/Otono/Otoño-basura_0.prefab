@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891773123483593541}
   - component: {fileID: 4397096568926069628}
+  - component: {fileID: 4998111007531593428}
   m_Layer: 0
   m_Name: "Oto\xF1o-basura_0"
   m_TagString: Untagged
@@ -84,3 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4998111007531593428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318343249069914124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Botella
+  type: 1
+  overlay: {fileID: 9005256329191623076, guid: ce0809524bb3b3f4ab8ac91e0c856471, type: 3}
+  collider2Dcollider: {fileID: 0}
