@@ -219,7 +219,7 @@ public class TaskList : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (HUD.Instance.isInTutorial) { return; }
+        if (Dialogue.Instance.IsActive()) return;
         show = !show;
     }
 

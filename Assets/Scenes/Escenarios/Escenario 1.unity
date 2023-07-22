@@ -197,7 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   box: {fileID: 1893601387}
   text: {fileID: 1811528916}
-  textList: []
+  textList:
+  - Hola
 --- !u!50 &142298127
 Rigidbody2D:
   serializedVersion: 4

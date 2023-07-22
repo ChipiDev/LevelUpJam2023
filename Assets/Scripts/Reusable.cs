@@ -17,7 +17,7 @@ public class Reusable : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        if(!gameManager.GetReciclarActive())
+        if(!gameManager.GetReciclarActive() && !Dialogue.Instance.IsActive())
             Pickup();
     }
 

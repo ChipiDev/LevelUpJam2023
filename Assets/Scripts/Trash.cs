@@ -50,7 +50,7 @@ public class Trash : MonoBehaviour
     */
     public void OnMouseEnter()
     {
-        if (HUD.Instance.isInTutorial) return;
+        if (Dialogue.Instance.IsActive()) return;
         if (gameManager.GetReciclarActive())
         {
             ActivateOverlay();
@@ -64,7 +64,7 @@ public class Trash : MonoBehaviour
 
     public void OnMouseExit()
     {
-        if (HUD.Instance.isInTutorial) return;
+        if (Dialogue.Instance.IsActive()) return;
 
         if (gameManager.GetReciclarActive())
         {
@@ -83,7 +83,7 @@ public class Trash : MonoBehaviour
      */
     public void OnMouseDown()
     {
-        if (HUD.Instance.isInTutorial) return;
+        if (Dialogue.Instance.IsActive()) return;
 
         if (gameManager.GetReciclarActive())
         {
@@ -103,7 +103,7 @@ public class Trash : MonoBehaviour
      */
     public void OnMouseUp()
     {
-        if (HUD.Instance.isInTutorial) return;
+        if (Dialogue.Instance.IsActive()) return;
 
         IEnumerator cor()
         {
