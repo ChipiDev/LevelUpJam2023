@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace ChipiDev
@@ -193,7 +194,8 @@ public class TaskList : MonoBehaviour
         if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash)
         {
             Debug.Log("Hemos ganao");
-            PlayerPrefs.SetInt("Nivel", PlayerPrefs.GetInt("Nivel") + 1);
+            int sceneNumber = SceneManager.GetActiveScene().buildIndex - 1;
+            PlayerPrefs.SetInt("Nivel" + sceneNumber.ToString(), 1);
         }
     }
 

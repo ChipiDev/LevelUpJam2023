@@ -59,11 +59,9 @@ public class MainMenu : MonoBehaviour
         }
 #endif
 
-        int levelUnlocked = PlayerPrefs.GetInt("Nivel");
-
         for (int i = 0; i < levels.Length; i++)
         {
-            if (i <= levelUnlocked)
+            if (PlayerPrefs.GetInt("Nivel" + i.ToString()) == 1)
             {
                 levels[i].interactable = true;
             }
@@ -165,14 +163,11 @@ public class MainMenu : MonoBehaviour
         IEnumerator waitCor()
         {
             // Restamos 1 para no contar el menú principal
-            if (PlayerPrefs.GetInt("Nivel") >= (levelIndex - 1))
-            {
-                isLoadingLevel = true;
-                fadePanel.gameObject.SetActive(true);
-                fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
-                yield return new WaitForSeconds(3);
-                SceneManager.LoadScene(levelIndex);
-            }
+            isLoadingLevel = true;
+            fadePanel.gameObject.SetActive(true);
+            fadePanel.gameObject.GetComponent<Animator>().Play("FadeOut");
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(levelIndex);
         }
         StartCoroutine(waitCor());
     }
