@@ -170,7 +170,7 @@ public class TaskList : MonoBehaviour
         //}
     }
 
-    public void ReusableTrash(Reusable reusable)
+    public void ReusableTrash()
     {
         reusabledTrash++;
         UpdateList();

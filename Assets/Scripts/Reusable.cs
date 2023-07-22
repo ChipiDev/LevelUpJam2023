@@ -13,6 +13,7 @@ public class Reusable : MonoBehaviour
     {
         gameObject.SetActive(true);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        newBackgroundObject.SetActive(false);
     }
 
     private void OnMouseDown() {
@@ -24,5 +25,6 @@ public class Reusable : MonoBehaviour
     {
         gameObject.SetActive(false);
         newBackgroundObject.SetActive(true);
+        TaskList.Instance.ReusableTrash();
     }
 }
