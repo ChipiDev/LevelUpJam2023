@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static bool levelPlayed;
     private bool reciclarActivo;
     [SerializeField] private GameObject container1;
     [SerializeField] private GameObject container2;
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelPlayed = true;
         Debug.Log("Prueba");
         reciclarActivo = true;
         container1.SetActive(true);
