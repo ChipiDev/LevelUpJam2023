@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (HUD.Instance.isInTutorial) { return; }
         Vector3 view = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         bool isOutside = view.x < 0 || view.x > 1 || view.y < 0 || view.y > 1;
         if (isOutside) { return; }
