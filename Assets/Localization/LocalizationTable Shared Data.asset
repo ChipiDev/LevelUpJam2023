@@ -15,8 +15,8 @@ MonoBehaviour:
   m_TableCollectionName: LocalizationTable
   m_TableCollectionNameGuidString: e8e56313afac4244bb3a32f35c739709
   m_Entries:
-  - m_Id: 550575357952
-    m_Key: MainMenu/MainMenuHUD/MainOptions/StartGameButton/Text (TMP)
+  - m_Id: 4227532931072
+    m_Key: MainMenu/MainMenuHUD/LanguageText
     m_Metadata:
       m_Items: []
   - m_Id: 2521558499328
@@ -27,12 +27,16 @@ MonoBehaviour:
     m_Key: MainMenu/MainMenuHUD/MainOptions/ExitButton/Text (TMP)
     m_Metadata:
       m_Items: []
-  - m_Id: 4227532931072
-    m_Key: MainMenu/MainMenuHUD/LanguageText
+  - m_Id: 550575357952
+    m_Key: MainMenu/MainMenuHUD/MainOptions/StartGameButton/Text (TMP)
     m_Metadata:
       m_Items: []
   - m_Id: 15325262856192
     m_Key: MainMenu/MainMenuHUD/VolumenSlider/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41606505549824
+    m_Key: MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/ProgramadoresText
     m_Metadata:
       m_Items: []
   m_Metadata:
