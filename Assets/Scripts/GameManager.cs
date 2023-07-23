@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         container1.SetActive(true);
         container2.SetActive(true);
         container3.SetActive(true);
+        CustomCursor.Instance.SetStandardGameplayHand();
     }
 
     public void ChangeMechanic(){
