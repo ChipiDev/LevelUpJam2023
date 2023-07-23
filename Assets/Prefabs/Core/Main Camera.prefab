@@ -495,9 +495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de76f2039b513d4aac733cb1b834d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neutralSprite: {fileID: 0}
-  happySprite: {fileID: 0}
-  angrySprite: {fileID: 0}
+  neutralSprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
+  happySprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
+  angrySprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
 --- !u!95 &542717873
 Animator:
   serializedVersion: 4

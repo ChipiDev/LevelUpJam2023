@@ -88,10 +88,21 @@ public class TaskList : MonoBehaviour
         showPosition = hidePosition + Vector3.up * showHeight;
 
         Trash[] trash = FindObjectsOfType<Trash>();
-        totalTrash = trash.Length;
+        totalTrash = 0;
+        totalReusableTrash = 0;
 
-        Reusable[] reusable = FindObjectsOfType<Reusable>();
-        totalReusableTrash = reusable.Length;
+        for (int i = 0; i < trash.Length; i++)
+        {
+            if (trash[i].type == Trash.ETrashType.reusable)
+            {
+                totalReusableTrash++;
+            }
+            else
+            {
+                totalTrash++;
+            }
+        }
+
 
         UpdateList();
 

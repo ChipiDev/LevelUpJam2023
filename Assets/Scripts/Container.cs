@@ -22,6 +22,17 @@ public class Container : MonoBehaviour
                 }else
                 {
                     // Que se ha equivocao
+                    if (Trash.pickedTrash.type == ETrashType.reusable)
+                    {
+                        Dialogue.Instance.SetText(Dialogue.Instance.incorrectTrashMechanic);
+                        Dialogue.Instance.Activate();
+                    }
+                    else
+                    {
+                        Dialogue.Instance.SetText(Dialogue.Instance.incorrectMessage);
+                        Dialogue.Instance.Activate();
+                    }
+
                     Trash.pickedTrash.collider2Dcollider.enabled = true;
                     Trash.pickedTrash.Restore();
                     Trash.pickedTrash = null;

@@ -59,6 +59,10 @@ public class Character : MonoBehaviour
                 Trash.pickedTrash.Restore();
                 Trash.pickedTrash = null;
 
+                Dialogue.Instance.SetText(Dialogue.Instance.trashOnCoco);
+                Dialogue.Instance.Activate();
+                SetAngry();
+
                 Jump();
             }
         }
@@ -77,32 +81,41 @@ public class Character : MonoBehaviour
 
     public void SetHappy()
     {
-        if (expresionCoroutine != null)
-        {
-            StopCoroutine(expresionCoroutine);
-        }
-        IEnumerator expresionCor()
-        {
-            spriteRenderer.sprite = happySprite;
-            yield return new WaitForSeconds(2);
-            spriteRenderer.sprite = neutralSprite;
-        }
-        expresionCoroutine = StartCoroutine(expresionCor());
+        spriteRenderer.sprite = happySprite;
+
+        //if (expresionCoroutine != null)
+        //{
+        //    StopCoroutine(expresionCoroutine);
+        //}
+        //IEnumerator expresionCor()
+        //{
+        //    spriteRenderer.sprite = happySprite;
+        //    yield return new WaitForSeconds(2);
+        //    spriteRenderer.sprite = neutralSprite;
+        //}
+        //expresionCoroutine = StartCoroutine(expresionCor());
     }
 
     public void SetAngry()
     {
-        if (expresionCoroutine != null)
-        {
-            StopCoroutine(expresionCoroutine);
-        }
-        IEnumerator expresionCor()
-        {
-            spriteRenderer.sprite = angrySprite;
-            yield return new WaitForSeconds(2);
-            spriteRenderer.sprite = neutralSprite;
-        }
-        expresionCoroutine = StartCoroutine(expresionCor());
+        spriteRenderer.sprite = angrySprite;
+
+        //if (expresionCoroutine != null)
+        //{
+        //    StopCoroutine(expresionCoroutine);
+        //}
+        //IEnumerator expresionCor()
+        //{
+        //    spriteRenderer.sprite = angrySprite;
+        //    yield return new WaitForSeconds(2);
+        //    spriteRenderer.sprite = neutralSprite;
+        //}
+        //expresionCoroutine = StartCoroutine(expresionCor());
+    }
+
+    public void SetNeutral()
+    {
+        spriteRenderer.sprite = neutralSprite;
     }
 
     public void Jump()

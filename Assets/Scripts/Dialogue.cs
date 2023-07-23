@@ -68,40 +68,82 @@ public class Dialogue : MonoBehaviour
         transform.parent = Camera.main.transform;
     }
 
-    private void OnMouseDown() {
-        if(isFinal) {
+    private void OnMouseDown()
+    {
+        if (isFinal)
+        {
             onConversationEnded?.Invoke();
             return;
         }
         listIndex++;
-        if(listIndex < textList.Length)
+        if (listIndex < textList.Length)
+        {
             text.text = textList[listIndex];
-        else{
+            // Cutrada rápida, si estamos en tutorial cambiamos expresiones
+            if (textList.Length > 1)
+            {
+                switch (listIndex)
+                {
+                    case 2:
+                        Character.Instance.SetAngry();
+                        break;
+                    case 3:
+                        Character.Instance.SetNeutral();
+                        break;
+                    case 5:
+                        Character.Instance.SetHappy();
+                        break;
+                    case 6:
+                        Character.Instance.SetNeutral();
+                        break;
+                }
+            }
+
+        }
+        else
+        {
             onConversationEnded?.Invoke();
+            Character.Instance.SetNeutral();
         }
     }
 
-    public void Activate(){
+    public void Activate()
+    {
         gameObject.GetComponent<Collider2D>().enabled = true;
         box.SetActive(true);
         text.text = textList[0];
         listIndex = 0;
         isActive = true;
+
+        // Cutrada rápida, si estamos en tutorial cambiamos expresiones
+        if (textList.Length > 1)
+        {
+            Character.Instance.SetHappy();
+        }
     }
 
-    public void ActivateFinal(){
+    public void ActivateFinal()
+    {
         Activate();
-        text.text = "Veo que se te da muy bien esto!! ¿Alguien dijo fiesta?";
+        text.text = completationMessage;
         isFinal = true;
     }
 
-    public void Deactivate(){
+    public void Deactivate()
+    {
         gameObject.GetComponent<Collider2D>().enabled = false;
         box.SetActive(false);
         isActive = false;
     }
 
-    public bool IsActive(){
+    public bool IsActive()
+    {
         return isActive;
+    }
+
+    public void SetText(string newText)
+    {
+        textList = new string[] { newText };
+        Activate();
     }
 }

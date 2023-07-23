@@ -10,7 +10,8 @@ public class Trash : MonoBehaviour
     {
         amarillo,
         verde,
-        azul
+        azul,
+        reusable
     }
     public ETrashType type;
 
@@ -22,6 +23,8 @@ public class Trash : MonoBehaviour
     Vector3 restorePosition;
 
     private GameManager gameManager;
+
+    public GameObject reusableBackgroundObject;
 
     // Start is called before the first frame update
     void Start()
@@ -51,30 +54,14 @@ public class Trash : MonoBehaviour
     public void OnMouseEnter()
     {
         if (Dialogue.Instance.IsActive()) return;
-        if (gameManager.GetReciclarActive())
-        {
-            ActivateOverlay();
-        }
-        else
-        {
-            //Cosas y sonidos de error
-            Debug.Log("Reutilizar activo");
-        }
+        ActivateOverlay();
     }
 
     public void OnMouseExit()
     {
         if (Dialogue.Instance.IsActive()) return;
 
-        if (gameManager.GetReciclarActive())
-        {
-            DeactivateOverlay();
-        }
-        else
-        {
-            //Cosas y sonidos de error
-            Debug.Log("Reutilizar activo");
-        }
+        DeactivateOverlay();
     }
 
 
@@ -93,8 +80,17 @@ public class Trash : MonoBehaviour
         }
         else
         {
-            //Cosas y sonidos de error
-            Debug.Log("Reutilizar activo");
+            if (type == ETrashType.reusable)
+            {
+                TaskList.Instance.ReusableTrash();
+                reusableBackgroundObject.SetActive(true);
+                Destroy(gameObject);
+            }
+            else
+            {
+                Dialogue.Instance.SetText(Dialogue.Instance.incorrectReusableMechanic);
+                Dialogue.Instance.Activate();
+            }
         }
     }
 
@@ -113,15 +109,7 @@ public class Trash : MonoBehaviour
             Trash.pickedTrash = null;
         }
 
-        if (gameManager.GetReciclarActive())
-        {
-            StartCoroutine(cor());
-        }
-        else
-        {
-            //Cosas y sonidos de error
-            Debug.Log("Reutilizar activo");
-        }
+        StartCoroutine(cor());
     }
 
     private void ActivateOverlay()
