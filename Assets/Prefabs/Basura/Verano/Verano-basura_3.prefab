@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: BoteCristal
+  pickupSound: {fileID: 8300000, guid: c1c3cae83316e0a4485dfb22a9ab3b96, type: 3}
   type: 3
   overlay: {fileID: 6862027582975658438}
   collider2Dcollider: {fileID: 0}
