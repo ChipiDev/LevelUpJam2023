@@ -7,6 +7,7 @@ public class Container : MonoBehaviour
 {
     public ETrashType type;
     private bool isMouseInside = false;
+    private AudioSource audio;
 
     // Update is called once per frame
     void Update()
@@ -36,6 +37,7 @@ public class Container : MonoBehaviour
                     Trash.pickedTrash.collider2Dcollider.enabled = true;
                     Trash.pickedTrash.Restore();
                     Trash.pickedTrash = null;
+                    GameManager.Instance.PlayErrorSound();
                 }
             }
         }
@@ -55,5 +57,7 @@ public class Container : MonoBehaviour
     {
         TaskList.Instance.PickUpTrash(trash);
         Destroy(trash.gameObject);
+        audio = gameObject.GetComponent<AudioSource>();
+        audio.Play();
     }
 }

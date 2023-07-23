@@ -9,7 +9,31 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject container1;
     [SerializeField] private GameObject container2;
     [SerializeField] private GameObject container3;
+    private AudioSource error;
 
+    private static GameManager instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance != null)
+                return instance;
+            else
+            {
+                return null;
+            }
+
+        }
+        set
+        {
+            instance = value;
+        }
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +56,10 @@ public class GameManager : MonoBehaviour
 
     public bool GetReciclarActive(){
         return reciclarActivo;
+    }
+
+    public void PlayErrorSound(){
+        error = gameObject.GetComponent<AudioSource>();
+        error.Play();
     }
 }
