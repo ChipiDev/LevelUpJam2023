@@ -120,6 +120,38 @@ MonoBehaviour:
     m_Key: MainMenu/MainMenuHUD/LevelSelectionMenu/ChaptersText 1
     m_Metadata:
       m_Items: []
+  - m_Id: 348911982514176
+    m_Key: Escenario 1/Dialogue (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349137153724416
+    m_Key: Escenario 1/Dialogue (1) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349157236051968
+    m_Key: Escenario 1/Dialogue (1) 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349181734981632
+    m_Key: Escenario 1/Dialogue (1) 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349204128370688
+    m_Key: Escenario 1/Dialogue (1) 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349221903831040
+    m_Key: Escenario 1/Dialogue (1) 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349236407734272
+    m_Key: Escenario 1/Dialogue (1) 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349274039029760
+    m_Key: Escenario 1/Dialogue (1) 7
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

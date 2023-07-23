@@ -140,6 +140,44 @@ MonoBehaviour:
     m_Localized: "CAP\xCDTULOS"
     m_Metadata:
       m_Items: []
+  - m_Id: 348911982514176
+    m_Localized: "Hola! Mi nombre es Cocogoose y te doy la bienvenida en tu primer
+      d\xEDa en Sustainature!|Como puedes ver, tenemos un paisaje precioso pero lleno
+      de restos de basura. \xA1Nuestro trabajo es arreglarlo!|Ver\xE1s que hay diversos
+      contenedores para reciclar los objetos que encontremos. Tendr\xE1s que arrastrarlos
+      al contenedor correcto. |Tambi\xE9n encontrar\xE1s alg\xFAn objeto que se puede
+      aprovechar. Cerca de la libreta ver\xE1s la opci\xF3n de reutilizar.|Si necesitas
+      ayuda, podr\xE1s consultar en la libreta las tareas pendientes.|\xBFEmpezamos?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349137153724416
+    m_Localized: "\xA1Sigue intent\xE1ndolo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349157236051968
+    m_Localized: "\xBFEn serio crees que eso va ah\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349181734981632
+    m_Localized: "\xA1Creo que podemos darle una segunda vida a esto!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349204128370688
+    m_Localized: "Ring! Ring! \xBFQui\xE9n es? Soy yo, don contenedor!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349221903831040
+    m_Localized: "\xA1Ayy! \xA1Qu\xE9 cosquillas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349236407734272
+    m_Localized: 'Bueno, pero no nos entretengamos '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349274039029760
+    m_Localized: "Veo que se te da muy bien esto!! \xBFAlguien dijo fiesta? "
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
