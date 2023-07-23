@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escenarios/Escenario 4.unity
     guid: 55a9050d36639cb458944341a27d4e74
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 69fdc5d20cf5a3e4fa0d828f534cc19b
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4074fd42d960de841a8f1bd5277371c7, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 97369c95b10020e498572498bb7103a8, type: 2}
