@@ -9,6 +9,11 @@ public class Container : MonoBehaviour
     private bool isMouseInside = false;
     private AudioSource audio;
 
+    private void Start()
+    {
+        audio = gameObject.GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -57,7 +62,6 @@ public class Container : MonoBehaviour
     {
         TaskList.Instance.PickUpTrash(trash);
         Destroy(trash.gameObject);
-        audio = gameObject.GetComponent<AudioSource>();
         audio.Play();
     }
 }
