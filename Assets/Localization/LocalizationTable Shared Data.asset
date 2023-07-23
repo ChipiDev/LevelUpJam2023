@@ -108,6 +108,10 @@ MonoBehaviour:
     m_Key: MainMenu/MainMenuHUD/LevelSelectionMenu/ChaptersText
     m_Metadata:
       m_Items: []
+  - m_Id: 291847574818816
+    m_Key: WinScene/MainMenuHUD/LevelSelectionMenu/ChaptersText (1)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
