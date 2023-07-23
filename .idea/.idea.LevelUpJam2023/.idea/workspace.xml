@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b881af40-4532-4126-a816-517340b99633" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LevelUpJam2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LevelUpJam2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ChangeMechs.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ChangeMechs.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Escenarios/Escenario 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Escenarios/Escenario 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeMechs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeMechs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gameplay/GameplayInterfaz/icono_mecanica.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Gameplay/GameplayInterfaz/icono_mecanica.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="b881af40-4532-4126-a816-517340b99633" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +99,7 @@
       <workItem from="1690022750300" duration="1326000" />
       <workItem from="1690102954681" duration="1597000" />
       <workItem from="1690121744942" duration="42000" />
-      <workItem from="1690121801640" duration="328000" />
+      <workItem from="1690121801640" duration="951000" />
     </task>
     <servers />
   </component>
