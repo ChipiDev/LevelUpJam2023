@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lata2
   type: 0
-  overlay: {fileID: 5146714078878033365, guid: 7420b677953011345a4a91f43f8a174a, type: 3}
+  overlay: {fileID: 1841028874430206856}
   collider2Dcollider: {fileID: 0}
 --- !u!61 &4687754818698100250
 BoxCollider2D:

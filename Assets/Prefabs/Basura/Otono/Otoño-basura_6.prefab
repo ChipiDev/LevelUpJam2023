@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff39a105cbcc9548b48baf66f218e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBackgroundObject: {fileID: 0}
+  newBackgroundObject: {fileID: 225394559297218551, guid: 28ca8137a7683f84e9fb4c8e34398118, type: 3}
 --- !u!50 &1358147299163135015
 Rigidbody2D:
   serializedVersion: 4

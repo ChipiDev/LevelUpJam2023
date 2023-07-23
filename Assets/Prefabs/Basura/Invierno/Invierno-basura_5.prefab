@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff39a105cbcc9548b48baf66f218e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBackgroundObject: {fileID: 0}
+  newBackgroundObject: {fileID: 7594264362222630941, guid: 5328635f9dd349147b60a6e6c862306c, type: 3}
 --- !u!61 &-7613466705397613264
 BoxCollider2D:
   m_ObjectHideFlags: 0

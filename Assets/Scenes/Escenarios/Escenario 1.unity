@@ -1007,6 +1007,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allTexts: 
+  incorrectMessage: 
+  trashOnCoco: 
+  incorrectTrashMechanic: 
+  incorrectReusableMechanic: 
+  cocoClick: 
+  cocoClick2: 
+  completationMessage: 
   box: {fileID: 193129125}
   text: {fileID: 264051808}
   textList: []
