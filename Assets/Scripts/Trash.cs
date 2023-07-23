@@ -30,6 +30,7 @@ public class Trash : MonoBehaviour
     void Start()
     {
         restorePosition = transform.position;
+        GetComponent<SpriteRenderer>().sortingOrder = 19;
         overlay.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
         overlay.transform.localScale = Vector3.one * 1.23f;
         overlay.SetActive(false);
@@ -118,8 +119,8 @@ public class Trash : MonoBehaviour
         {
             overlay.SetActive(true);
 
-            overlay.GetComponent<SpriteRenderer>().sortingOrder++;
-            GetComponent<SpriteRenderer>().sortingOrder++;
+            overlay.GetComponent<SpriteRenderer>().sortingOrder += 5;
+            GetComponent<SpriteRenderer>().sortingOrder += 5;
         }
 
     }
@@ -130,8 +131,8 @@ public class Trash : MonoBehaviour
         {
             overlay.SetActive(false);
 
-            overlay.GetComponent<SpriteRenderer>().sortingOrder--;
-            GetComponent<SpriteRenderer>().sortingOrder--;
+            overlay.GetComponent<SpriteRenderer>().sortingOrder -= 5;
+            GetComponent<SpriteRenderer>().sortingOrder -= 5;
         }
     }
 
