@@ -98,6 +98,30 @@ MonoBehaviour:
     m_Localized: "\xA1Qu\xE9 alegr\xEDa verte de nuevo! \xBFEmpezamos?"
     m_Metadata:
       m_Items: []
+  - m_Id: 259297289781248
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259378315345920
+    m_Localized: "Dise\xF1adores"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259710252564480
+    m_Localized: Programadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259894600613888
+    m_Localized: Programadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260100389945344
+    m_Localized: "Artistas gr\xE1ficos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260282133331968
+    m_Localized: "CAP\xCDTULOS"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

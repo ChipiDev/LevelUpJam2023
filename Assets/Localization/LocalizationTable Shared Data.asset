@@ -83,6 +83,31 @@ MonoBehaviour:
     m_Key: Escenario 2/Dialogue 1
     m_Metadata:
       m_Items: []
+  - m_Id: 259297289781248
+    m_Key: MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/MusicaText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259378315345920
+    m_Key: "MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/Dise\xF1adoresText"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259710252564480
+    m_Key: MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/ProgramadoresText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259894600613888
+    m_Key: MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/ProgramadoresText
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260100389945344
+    m_Key: MainMenu/MainMenuHUD/CreditsMenu/CreditsVerticalLayoutGroup/ArtistasGraficosText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260282133331968
+    m_Key: MainMenu/MainMenuHUD/LevelSelectionMenu/ChaptersText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
