@@ -113,11 +113,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 260282133331968
-    m_Localized: CHAPTERS
+    m_Localized: THE END
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291847574818816
+    m_Localized: THANK YOU FOR PLAYING
     m_Metadata:
       m_Items: []
   - m_Id: 311842947284992
     m_Localized: Tasks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316097787674624
+    m_Localized: CHAPTERS
     m_Metadata:
       m_Items: []
   references:

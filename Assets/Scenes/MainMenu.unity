@@ -5185,26 +5185,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 3677259991110647855
+  - rid: 3677259997749444612
   references:
     version: 2
     RefIds:
-    - rid: 3677259991110647855
+    - rid: 3677259997749444612
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
       data:
         m_Target: {fileID: 828988501}
         m_TrackedProperties:
           items:
-          - rid: 3677259991110647856
+          - rid: 3677259997749444613
         m_UpdateType: 0
-    - rid: 3677259991110647856
+    - rid: 3677259997749444613
       type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
       data:
         m_Localized:
           m_TableReference:
             m_TableCollectionName: GUID:e8e56313afac4244bb3a32f35c739709
           m_TableEntryReference:
-            m_KeyId: 260282133331968
+            m_KeyId: 316097787674624
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

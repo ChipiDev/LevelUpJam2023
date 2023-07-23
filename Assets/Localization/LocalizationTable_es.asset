@@ -119,11 +119,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 260282133331968
-    m_Localized: "CAP\xCDTULOS"
+    m_Localized: FIN DEL JUEGO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291847574818816
+    m_Localized: GRACIAS POR JUGAR
     m_Metadata:
       m_Items: []
   - m_Id: 311842947284992
     m_Localized: Tareas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316097787674624
+    m_Localized: "CAP\xCDTULOS"
     m_Metadata:
       m_Items: []
   references:
