@@ -71,7 +71,7 @@ public class Trash : MonoBehaviour
      */
     public void OnMouseDown()
     {
-        if (Dialogue.Instance.IsActive()) return;
+        if (Dialogue.Instance.IsActive() || Time.timeSinceLevelLoad < 3) return;
 
         if (gameManager.GetReciclarActive())
         {
