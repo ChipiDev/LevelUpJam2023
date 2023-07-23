@@ -30,6 +30,8 @@ public class Trash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         restorePosition = transform.position;
         GetComponent<SpriteRenderer>().sortingOrder = 19;
         overlay.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;

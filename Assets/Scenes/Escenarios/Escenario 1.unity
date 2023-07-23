@@ -1043,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5628036465020965384, guid: 4cb060f0f76d92c479574519548ce8f0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5628036465020965384, guid: 4cb060f0f76d92c479574519548ce8f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1381,7 +1381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 894917312858240275, guid: 4ba8f31d9dd8dc241b1b1fe8aa0b5e92, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 894917312858240275, guid: 4ba8f31d9dd8dc241b1b1fe8aa0b5e92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1751,7 +1751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900374002158301773, guid: 375ecdf7808aa7742968ee274b9951d0, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1900374002158301773, guid: 375ecdf7808aa7742968ee274b9951d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1809,7 +1809,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 665943963444894821, guid: cbb16f6d020e1414783334bff4dd96eb, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 665943963444894821, guid: cbb16f6d020e1414783334bff4dd96eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1942,7 +1942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7508740368168217046, guid: 928fb250ea3bb6b45b7d2c7b2bfe3ad5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7508740368168217046, guid: 928fb250ea3bb6b45b7d2c7b2bfe3ad5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2045,6 +2045,10 @@ PrefabInstance:
     - target: {fileID: 1015924492633821116, guid: 8227ed05e6c9f6f4ba5e2901007978a8, type: 3}
       propertyPath: m_Name
       value: Verano-basura_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179726334067547342, guid: 8227ed05e6c9f6f4ba5e2901007978a8, type: 3}
+      propertyPath: cursor.Array.size
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8227ed05e6c9f6f4ba5e2901007978a8, type: 3}
