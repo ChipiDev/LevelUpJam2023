@@ -30,8 +30,8 @@ public class Trash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+
         restorePosition = transform.position;
         GetComponent<SpriteRenderer>().sortingOrder = 19;
         overlay.GetComponent<SpriteRenderer>().sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
@@ -75,7 +75,7 @@ public class Trash : MonoBehaviour
     public void OnMouseDown()
     {
         if (Dialogue.Instance.IsActive() || Time.timeSinceLevelLoad < 3) return;
-        
+
         AudioSource.PlayClipAtPoint(pickupSound, Camera.main.transform.position, 0.5f);
         if (gameManager.GetReciclarActive())
         {
@@ -85,6 +85,14 @@ public class Trash : MonoBehaviour
 
             overlay.GetComponent<SpriteRenderer>().sortingOrder += 5;
             GetComponent<SpriteRenderer>().sortingOrder += 5;
+
+
+            IEnumerator waitAFrame()
+            {
+                yield return null;
+                CustomCursor.Instance.SetPickingHand();
+            }
+            StartCoroutine(waitAFrame());
         }
         else
         {
@@ -123,6 +131,7 @@ public class Trash : MonoBehaviour
             }
 
             Trash.pickedTrash = null;
+            CustomCursor.Instance.SetStandardGameplayHand();
         }
 
         StartCoroutine(cor());
@@ -133,8 +142,7 @@ public class Trash : MonoBehaviour
         if (!overlay.activeInHierarchy)
         {
             overlay.SetActive(true);
-
-
+            CustomCursor.Instance.SetSelectGameplayHand();
         }
 
     }
@@ -144,6 +152,7 @@ public class Trash : MonoBehaviour
         if (overlay.activeInHierarchy)
         {
             overlay.SetActive(false);
+            CustomCursor.Instance.SetStandardGameplayHand();
         }
     }
 
