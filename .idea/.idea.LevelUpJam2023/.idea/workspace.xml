@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b881af40-4532-4126-a816-517340b99633" name="Changes" comment="" />
+    <list default="true" id="b881af40-4532-4126-a816-517340b99633" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/MainMenu/FlagLanguages/SpainFlag.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/MainMenu/FlagLanguages/SpainFlag.png.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +101,7 @@
       <workItem from="1689928536277" duration="1704000" />
       <workItem from="1690020279671" duration="715000" />
       <workItem from="1690022750300" duration="1326000" />
+      <workItem from="1690102954681" duration="322000" />
     </task>
     <servers />
   </component>
