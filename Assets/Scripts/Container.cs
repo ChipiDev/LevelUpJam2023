@@ -37,6 +37,7 @@ public class Container : MonoBehaviour
                     Trash.pickedTrash.collider2Dcollider.enabled = true;
                     Trash.pickedTrash.Restore();
                     Trash.pickedTrash = null;
+                    GameManager.Instance.PlayErrorSound();
                 }
             }
         }

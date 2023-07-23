@@ -94,6 +94,7 @@ public class Trash : MonoBehaviour
             {
                 Dialogue.Instance.SetText(Dialogue.Instance.incorrectReusableMechanic);
                 Dialogue.Instance.Activate();
+                GameManager.Instance.PlayErrorSound();
             }
         }
     }
