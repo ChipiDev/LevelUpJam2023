@@ -120,10 +120,10 @@ TextureImporter:
       name: contenedores_0
       rect:
         serializedVersion: 2
-        x: 175
-        y: 122
-        width: 229
-        height: 216
+        x: 136
+        y: 124
+        width: 158
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: contenedores_1
       rect:
         serializedVersion: 2
-        x: 548
-        y: 122
-        width: 230
-        height: 216
+        x: 394
+        y: 124
+        width: 161
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: contenedores_2
       rect:
         serializedVersion: 2
-        x: 962
-        y: 122
-        width: 229
-        height: 216
+        x: 683
+        y: 124
+        width: 161
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
