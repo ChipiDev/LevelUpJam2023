@@ -97,10 +97,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 108101296605839064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff39a105cbcc9548b48baf66f218e63, type: 3}
+  m_Script: {fileID: 11500000, guid: 980cd9478b182e14bab0f919ab9f3124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBackgroundObject: {fileID: 7362954199808343973, guid: 8e14f69ae52abbd489bf203fb9dcde48, type: 3}
+  name: BoteCristal
+  type: 3
+  overlay: {fileID: 6862027582975658438}
+  collider2Dcollider: {fileID: 0}
+  reusableBackgroundObject: {fileID: 0}
 --- !u!61 &4358794192314260730
 BoxCollider2D:
   m_ObjectHideFlags: 0
