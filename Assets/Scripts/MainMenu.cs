@@ -29,7 +29,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button[] levels;
 
     public Slider volumeSlider;
-
     private bool isLoadingLevel = false;
     // Start is called before the first frame update
     void Start()
@@ -42,6 +41,7 @@ public class MainMenu : MonoBehaviour
             fadePanel.gameObject.SetActive(false);
         }
         StartCoroutine(fadeOutCor());
+        englishButton.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1);
 
         if (GameManager.levelPlayed)
         {
@@ -184,11 +184,17 @@ public class MainMenu : MonoBehaviour
     public void SetSpanishLanguage()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+        //cambiar los colores del botón a gris
+        englishButton.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1);
+        spainButton.GetComponent<Image>().color = new Color(1, 1, 1, 1);
     }
 
     public void SetEnglishLanguage()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+        spainButton.GetComponent<Image>().color = new Color(0.5f, 0.5f , 0.5f, 1);
+        englishButton.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+
     }
 
     public void OnVolumeSliderChange(float value)
