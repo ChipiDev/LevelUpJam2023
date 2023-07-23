@@ -66,6 +66,38 @@ MonoBehaviour:
     m_Localized: "\xA1Qu\xE9 alegr\xEDa verte de nuevo! \xBFEmpezamos?"
     m_Metadata:
       m_Items: []
+  - m_Id: 240264284815360
+    m_Localized: "\xA1Sigue intent\xE1ndolo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240317476978688
+    m_Localized: "\xBFEn serio crees que eso va ah\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240369947721728
+    m_Localized: "\xA1Creo que podemos darle una segunda vida a esto!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240409386762240
+    m_Localized: "Ring! Ring! \xBFQui\xE9n es? Soy yo, don contenedor!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240461224165376
+    m_Localized: "\xA1Ayy! \xA1Qu\xE9 cosquillas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240496556982272
+    m_Localized: 'Bueno, pero no nos entretengamos '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240556405506048
+    m_Localized: "Veo que se te da muy bien esto!! \xBFAlguien dijo fiesta? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241345169539072
+    m_Localized: "\xA1Qu\xE9 alegr\xEDa verte de nuevo! \xBFEmpezamos?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

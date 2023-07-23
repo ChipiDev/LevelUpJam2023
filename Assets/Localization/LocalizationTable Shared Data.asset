@@ -51,6 +51,38 @@ MonoBehaviour:
     m_Key: Escenario 2/Dialogue
     m_Metadata:
       m_Items: []
+  - m_Id: 240264284815360
+    m_Key: Escenario 1/Dialogue 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240317476978688
+    m_Key: Escenario 1/Dialogue 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240369947721728
+    m_Key: Escenario 1/Dialogue 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240409386762240
+    m_Key: Escenario 1/Dialogue 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240461224165376
+    m_Key: Escenario 1/Dialogue 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240496556982272
+    m_Key: Escenario 1/Dialogue 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240556405506048
+    m_Key: Escenario 1/Dialogue 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241345169539072
+    m_Key: Escenario 2/Dialogue 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

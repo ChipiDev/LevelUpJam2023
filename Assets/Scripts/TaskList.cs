@@ -149,7 +149,8 @@ public class TaskList : MonoBehaviour
         if (show)
         {
             transform.localPosition = Vector3.Lerp(transform.localPosition, showPosition, Time.deltaTime * showSpeed);
-        }else
+        }
+        else
         {
             transform.localPosition = Vector3.Lerp(transform.localPosition, hidePosition, Time.deltaTime * showSpeed);
         }
@@ -202,22 +203,30 @@ public class TaskList : MonoBehaviour
         }
     }
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
         Dialogue.onConversationEnded += OnConversationEnded;
     }
 
-    private void OnDisable() {
+    private void OnDisable()
+    {
         Dialogue.onConversationEnded -= OnConversationEnded;
     }
 
-    private void OnConversationEnded(){
-        if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash){
+    private void OnConversationEnded()
+    {
+        if (pickedTrash == totalTrash && reusabledTrash == totalReusableTrash)
+        {
             int sceneNumber = SceneManager.GetActiveScene().buildIndex;
+
+            PlayerPrefs.SetInt("Nivel" + (sceneNumber).ToString(), 1);
             SceneManager.LoadScene(sceneNumber + 1);
-        }else{
+        }
+        else
+        {
             Dialogue.Instance.Deactivate();
         }
-        
+
     }
 
     private void OnMouseDown()

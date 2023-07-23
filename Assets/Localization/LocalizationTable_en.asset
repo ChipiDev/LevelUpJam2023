@@ -60,6 +60,38 @@ MonoBehaviour:
     m_Localized: What a joy to see you again! Shall we start?
     m_Metadata:
       m_Items: []
+  - m_Id: 240264284815360
+    m_Localized: 'Keep trying! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240317476978688
+    m_Localized: Do you seriously think that goes there?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240369947721728
+    m_Localized: I think we can give this a second life!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240409386762240
+    m_Localized: Ring! Ring! Who is it? It's me, Mr bin!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240461224165376
+    m_Localized: Stop it! That tickles!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240496556982272
+    m_Localized: Ok, but let's not get distracted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240556405506048
+    m_Localized: I see that you are very good at this! Did someone say party?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241345169539072
+    m_Localized: What a joy to see you again! Shall we start?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
