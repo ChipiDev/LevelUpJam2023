@@ -78,6 +78,9 @@ public class Trash : MonoBehaviour
             Trash.pickedTrash = this;
             restorePosition = transform.position;
             collider2Dcollider.enabled = false;
+
+            overlay.GetComponent<SpriteRenderer>().sortingOrder += 5;
+            GetComponent<SpriteRenderer>().sortingOrder += 5;
         }
         else
         {
@@ -107,6 +110,13 @@ public class Trash : MonoBehaviour
             yield return null;
             DeactivateOverlay();
             collider2Dcollider.enabled = true;
+
+            if (Trash.pickedTrash != null && Trash.pickedTrash.gameObject == gameObject)
+            {
+                overlay.GetComponent<SpriteRenderer>().sortingOrder -= 5;
+                GetComponent<SpriteRenderer>().sortingOrder -= 5;
+            }
+
             Trash.pickedTrash = null;
         }
 
@@ -119,8 +129,7 @@ public class Trash : MonoBehaviour
         {
             overlay.SetActive(true);
 
-            overlay.GetComponent<SpriteRenderer>().sortingOrder += 5;
-            GetComponent<SpriteRenderer>().sortingOrder += 5;
+
         }
 
     }
@@ -130,9 +139,6 @@ public class Trash : MonoBehaviour
         if (overlay.activeInHierarchy)
         {
             overlay.SetActive(false);
-
-            overlay.GetComponent<SpriteRenderer>().sortingOrder -= 5;
-            GetComponent<SpriteRenderer>().sortingOrder -= 5;
         }
     }
 
