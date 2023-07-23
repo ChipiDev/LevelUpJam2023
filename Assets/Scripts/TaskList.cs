@@ -221,6 +221,7 @@ public class TaskList : MonoBehaviour
             int sceneNumber = SceneManager.GetActiveScene().buildIndex - 1;
             PlayerPrefs.SetInt("Nivel" + sceneNumber.ToString(), 1);
             Dialogue.Instance.ActivateFinal();
+            WinSound.Instance.PlayWinSound();
             //Sonido de triunfo
             //Muñeco gesto feliz
         }
