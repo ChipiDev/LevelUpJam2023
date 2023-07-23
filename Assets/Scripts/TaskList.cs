@@ -246,6 +246,10 @@ public class TaskList : MonoBehaviour
         show = !show;
     }
 
+    public bool IsSixtyPercentCompleted(){
+        return ((float)pickedTrash / (float)totalTrash) * 100 > 60;
+    }
+
     //private void OnMouseExit()
     //{
     //    if (HUD.Instance.isInTutorial) { return; }
