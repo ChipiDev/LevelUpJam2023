@@ -2102,6 +2102,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8936455846385744228, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846385744228, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846385744228, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012753, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012753, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012753, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012754, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0309355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012754, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1426153
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012754, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.08400953
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455846707012754, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.018970013
+      objectReference: {fileID: 0}
     - target: {fileID: 8936455847273479947, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -2154,5 +2194,17 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 553076635}
+    - target: {fileID: 8936455847607368476, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455847607368476, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936455847607368476, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2dfa5b98a8059c49851993504d9cece, type: 3}
