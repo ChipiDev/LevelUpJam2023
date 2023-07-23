@@ -108,6 +108,10 @@ MonoBehaviour:
     m_Key: MainMenu/MainMenuHUD/LevelSelectionMenu/ChaptersText
     m_Metadata:
       m_Items: []
+  - m_Id: 311842947284992
+    m_Key: Main Camera/Main Camera/TaskList/Header
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

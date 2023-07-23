@@ -122,6 +122,10 @@ MonoBehaviour:
     m_Localized: "CAP\xCDTULOS"
     m_Metadata:
       m_Items: []
+  - m_Id: 311842947284992
+    m_Localized: Tareas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
