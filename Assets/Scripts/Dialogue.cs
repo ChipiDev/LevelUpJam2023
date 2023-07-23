@@ -92,10 +92,10 @@ public class Dialogue : MonoBehaviour
             {
                 switch (listIndex)
                 {
-                    case 2:
+                    case 1:
                         Character.Instance.SetAngry();
                         break;
-                    case 3:
+                    case 2:
                         Character.Instance.SetNeutral();
                         break;
                     case 5:

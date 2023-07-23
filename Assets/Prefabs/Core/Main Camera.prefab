@@ -496,8 +496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neutralSprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
-  happySprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
-  angrySprite: {fileID: 21300000, guid: cf3c84ffb1f1d9942b98d9b0a48f3565, type: 3}
+  happySprite: {fileID: 21300000, guid: cb7abd7fe3c816e42a8b0141cbb76f6c, type: 3}
+  angrySprite: {fileID: 21300000, guid: 6278891b41f11024bb1a3de2923bc76a, type: 3}
 --- !u!95 &542717873
 Animator:
   serializedVersion: 4

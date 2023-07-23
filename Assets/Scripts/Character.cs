@@ -92,7 +92,7 @@ public class Character : MonoBehaviour
         {
             Dialogue.Instance.SetText(Dialogue.Instance.cocoClick);
             Dialogue.Instance.Activate();
-            SetAngry();
+            SetHappy();
         }
 
         clicked = true;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
@@ -190,8 +191,18 @@ public class TaskList : MonoBehaviour
 
     public void UpdateList()
     {
-        textsField[0].text = "Recycled: " + pickedTrash.ToString() + "/" + totalTrash.ToString();
-        textsField[1].text = "Reused: " + reusabledTrash.ToString() + "/" + totalReusableTrash.ToString();
+        string recycledTextString = "Recycled ";
+        string reusedTextString = "Recycled ";
+
+
+        if (LocalizationSettings.SelectedLocale == LocalizationSettings.AvailableLocales.Locales[1])
+        {
+            recycledTextString = "Reciclado ";
+            reusedTextString = "Reusado ";
+        }
+
+        textsField[0].text = recycledTextString + pickedTrash.ToString() + "/" + totalTrash.ToString();
+        textsField[1].text = reusedTextString + reusabledTrash.ToString() + "/" + totalReusableTrash.ToString();
 
         if (pickedTrash == totalTrash)
         {
