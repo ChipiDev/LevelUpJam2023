@@ -30,6 +30,30 @@ public class MainMenu : MonoBehaviour
 
     public Slider volumeSlider;
     private bool isLoadingLevel = false;
+
+    private static MainMenu instance;
+    public static MainMenu Instance
+    {
+        get
+        {
+            if (instance != null)
+                return instance;
+            else
+            {
+                return null;
+            }
+
+        }
+        set
+        {
+            instance = value;
+        }
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
