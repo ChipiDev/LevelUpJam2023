@@ -287,11 +287,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955510151914990191, guid: 5328635f9dd349147b60a6e6c862306c, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7594264362222630941, guid: 5328635f9dd349147b60a6e6c862306c, type: 3}
       propertyPath: m_Name
       value: Invierno-con-rueda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594264362222630941, guid: 5328635f9dd349147b60a6e6c862306c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5328635f9dd349147b60a6e6c862306c, type: 3}
@@ -1749,6 +1753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invierno-basura_5
       objectReference: {fileID: 0}
+    - target: {fileID: 6542446525682399809, guid: d2df89d16e99d944da721d2eaecbb6d2, type: 3}
+      propertyPath: reusableBackgroundObject
+      value: 
+      objectReference: {fileID: 1611972881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2df89d16e99d944da721d2eaecbb6d2, type: 3}
 --- !u!4 &1539149564 stripped
