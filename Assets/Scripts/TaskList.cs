@@ -171,6 +171,7 @@ public class TaskList : MonoBehaviour
     {
         pickedTrash++;
         UpdateList();
+        PollutionFilter.Instance.ClearPollution(pickedTrash, totalTrash);
 
         //for (int i = 0; i < list.Count; i++)
         //{
