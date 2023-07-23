@@ -101,9 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Pizza2
+  pickupSound: {fileID: 8300000, guid: c1c3cae83316e0a4485dfb22a9ab3b96, type: 3}
   type: 2
   overlay: {fileID: 5778030713073472870}
   collider2Dcollider: {fileID: 0}
+  reusableBackgroundObject: {fileID: 0}
 --- !u!50 &2794147333297177794
 Rigidbody2D:
   serializedVersion: 4

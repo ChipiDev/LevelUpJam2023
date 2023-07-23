@@ -5,6 +5,7 @@ using UnityEngine;
 public class Trash : MonoBehaviour
 {
     public string name;
+    public AudioClip pickupSound;
 
     public enum ETrashType
     {
@@ -72,7 +73,8 @@ public class Trash : MonoBehaviour
     public void OnMouseDown()
     {
         if (Dialogue.Instance.IsActive() || Time.timeSinceLevelLoad < 3) return;
-
+        
+        AudioSource.PlayClipAtPoint(pickupSound, Camera.main.transform.position, 0.5f);
         if (gameManager.GetReciclarActive())
         {
             Trash.pickedTrash = this;

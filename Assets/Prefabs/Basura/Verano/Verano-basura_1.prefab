@@ -185,9 +185,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Botella1
+  pickupSound: {fileID: 8300000, guid: c1c3cae83316e0a4485dfb22a9ab3b96, type: 3}
   type: 1
   overlay: {fileID: 3182447075405809284}
   collider2Dcollider: {fileID: 0}
+  reusableBackgroundObject: {fileID: 0}
 --- !u!61 &6286969761513672926
 BoxCollider2D:
   m_ObjectHideFlags: 0

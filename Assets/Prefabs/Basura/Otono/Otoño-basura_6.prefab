@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: CamisaRota
+  pickupSound: {fileID: 8300000, guid: c1c3cae83316e0a4485dfb22a9ab3b96, type: 3}
   type: 3
   overlay: {fileID: 133787124774218660}
   collider2Dcollider: {fileID: 0}
