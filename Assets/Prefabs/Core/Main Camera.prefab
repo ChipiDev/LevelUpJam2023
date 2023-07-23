@@ -900,6 +900,46 @@ PrefabInstance:
       propertyPath: showHeight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6409811451464561351, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 6409811451464561351, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409811451464561351, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409811451464561351, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409811451464561351, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7037243220074510636, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7037243220074510636, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7037243220074510636, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7037243220074510636, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7037243220074510636, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7266932562175945229, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -984,17 +1024,121 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 7266932562529221049, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562529221050, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 7266932562570699034, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
       propertyPath: m_SortingOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 7266932562570699034, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
     - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
       propertyPath: m_text
       value: Tasks
       objectReference: {fileID: 0}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562570699035, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 7266932562590933012, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
       propertyPath: m_SortingOrder
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562590933012, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7246110570510282364, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7266932562590933013, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942133989723857670, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 454a71e26da63604a9fc161306a74d28, type: 2}
+    - target: {fileID: 7942133989723857670, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942133989723857670, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942133989723857670, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942133989723857670, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278ea35f24450fd4e8e7a43dea87c671, type: 3}
