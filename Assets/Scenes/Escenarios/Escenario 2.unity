@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 739664776}
   - component: {fileID: 739664775}
   - component: {fileID: 739664777}
+  - component: {fileID: 739664778}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -779,6 +780,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &739664778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739664774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246da4e25f0193846b62d50e00e37f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pollutedMusic: {fileID: 739664775}
+  cleanMusic: {fileID: 739664777}
 --- !u!1 &814993336
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814993338}
   - component: {fileID: 814993337}
+  - component: {fileID: 814993339}
   m_Layer: 0
   m_Name: BackgroundOtonoPolucion
   m_TagString: Untagged
@@ -863,6 +879,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814993339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814993336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9fa79f6d39514fadb46718885efec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &854009072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1137,9 +1165,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 755da881d4164a54096c0275e7b01636, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

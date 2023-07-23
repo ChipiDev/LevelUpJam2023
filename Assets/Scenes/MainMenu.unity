@@ -756,7 +756,7 @@ Transform:
   m_GameObject: {fileID: 47956912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 179.4, y: 0, z: -9720}
-  m_LocalScale: {x: 4.055777, y: 4.055777, z: 4.055777}
+  m_LocalScale: {x: 7.529058, y: 7.529058, z: 7.529058}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1066160782}
@@ -803,7 +803,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 238fbd4ed684e3341b764a0baeb81645, type: 3}
+  m_Sprite: {fileID: 21300000, guid: adc4b8e954b1fec489107f97e512f5de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6983,7 +6983,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: https://www.instagram.com/oyes_eso/
+          m_StringArgument: https://oyeseso.wordpress.com/
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 718635716}
@@ -12085,7 +12085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 202.33002, y: -26.935394}
+  m_AnchoredPosition: {x: 202.33002, y: -26.935387}
   m_SizeDelta: {x: 404.66003, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818821530

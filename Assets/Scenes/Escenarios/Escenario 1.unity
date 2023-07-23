@@ -441,9 +441,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ac401c79a045fd340822b56d437ebce4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 653565686}
   - component: {fileID: 653565685}
   - component: {fileID: 653565684}
+  - component: {fileID: 653565687}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -693,6 +694,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653565687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653565683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246da4e25f0193846b62d50e00e37f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pollutedMusic: {fileID: 653565685}
+  cleanMusic: {fileID: 653565684}
 --- !u!1 &683616058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,6 +1911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005571013}
   - component: {fileID: 2005571012}
+  - component: {fileID: 2005571014}
   m_Layer: 0
   m_Name: BackgroundVeranoPolucion
   m_TagString: Untagged
@@ -1970,6 +1986,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005571014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005571011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9fa79f6d39514fadb46718885efec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2015274020613903900
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 483671834}
   - component: {fileID: 483671833}
   - component: {fileID: 483671832}
+  - component: {fileID: 483671835}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -590,6 +591,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483671835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483671831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246da4e25f0193846b62d50e00e37f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pollutedMusic: {fileID: 483671833}
+  cleanMusic: {fileID: 483671832}
 --- !u!1 &718062483
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,9 +860,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 56d691aca2a27f84d8344a22b1b20a7e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1923,6 +1938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1927697710}
   - component: {fileID: 1927697709}
+  - component: {fileID: 1927697711}
   m_Layer: 0
   m_Name: BackgroundInviernoPolucion
   m_TagString: Untagged
@@ -1997,6 +2013,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1927697711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927697708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9fa79f6d39514fadb46718885efec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1928843134
 PrefabInstance:
   m_ObjectHideFlags: 0
