@@ -752,6 +752,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8936455846752286705}
     m_Modifications:
+    - target: {fileID: 8219432718759058873, guid: f141b31f475aba544bd40a43b408b55d, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7bc907012ae30574687164ec41ac9a79, type: 2}
     - target: {fileID: 8862544173815800504, guid: f141b31f475aba544bd40a43b408b55d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -818,6 +822,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8936455846752286705}
     m_Modifications:
+    - target: {fileID: 2980177144989331290, guid: d9c645f64ed44e24da830a60857654af, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7bc907012ae30574687164ec41ac9a79, type: 2}
     - target: {fileID: 4951918390034247056, guid: d9c645f64ed44e24da830a60857654af, type: 3}
       propertyPath: m_SortingOrder
       value: 20
@@ -1028,6 +1036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8936455846752286705}
     m_Modifications:
+    - target: {fileID: 584252728939234188, guid: 5b37e30afbf31f44fad4d7c2c0d0d3cc, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7bc907012ae30574687164ec41ac9a79, type: 2}
     - target: {fileID: 905582888348532183, guid: 5b37e30afbf31f44fad4d7c2c0d0d3cc, type: 3}
       propertyPath: m_SortingOrder
       value: 20
