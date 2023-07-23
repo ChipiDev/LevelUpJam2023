@@ -172,6 +172,7 @@ public class TaskList : MonoBehaviour
     {
         pickedTrash++;
         UpdateList();
+        PollutionFilter.Instance.ClearPollution(pickedTrash, totalTrash);
 
         //for (int i = 0; i < list.Count; i++)
         //{
@@ -255,6 +256,10 @@ public class TaskList : MonoBehaviour
     {
         if (Dialogue.Instance.IsActive()) return;
         show = !show;
+    }
+
+    public bool IsSixtyPercentCompleted(){
+        return ((float)pickedTrash / (float)totalTrash) * 100 > 60;
     }
 
     //private void OnMouseExit()
