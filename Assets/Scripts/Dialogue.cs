@@ -28,6 +28,14 @@ public class Dialogue : MonoBehaviour
 
     private bool isFinal;
 
+    public bool isDialogeActive
+    {
+        get
+        {
+            return box.gameObject.activeInHierarchy;
+        }
+    }
+
     private static Dialogue instance;
     public static Dialogue Instance
     {

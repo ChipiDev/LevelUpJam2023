@@ -40,6 +40,7 @@ public class Character : MonoBehaviour
     private bool isMouseInside = false;
     private Coroutine expresionCoroutine;
 
+    bool clicked = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +78,25 @@ public class Character : MonoBehaviour
     private void OnMouseExit()
     {
         isMouseInside = false;
+    }
+
+    private void OnMouseDown()
+    {
+        if (Dialogue.Instance.isDialogeActive) { return; }
+        if (clicked)
+        {
+            Dialogue.Instance.SetText(Dialogue.Instance.cocoClick2);
+            Dialogue.Instance.Activate();
+        }
+        else
+        {
+            Dialogue.Instance.SetText(Dialogue.Instance.cocoClick);
+            Dialogue.Instance.Activate();
+            SetAngry();
+        }
+
+        clicked = true;
+
     }
 
     public void SetHappy()
